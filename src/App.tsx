@@ -1,6 +1,7 @@
-import { useState, useRef, useCallback } from 'react';
+import { useState, useRef, useCallback, useEffect } from 'react';
 import Tesseract from 'tesseract.js';
 import { searchItems, findItemByName, type Item } from './data/items';
+import { searchItemsAPI } from './api/metaforge';
 import './App.css';
 
 type InputMode = 'list' | 'screenshot';
@@ -24,6 +25,8 @@ export function App() {
   // List mode state
   const [search, setSearch] = useState('');
   const [showSearch, setShowSearch] = useState(false);
+  const [apiResults, setApiResults] = useState<Item[]>([]);
+  const [apiLoading, setApiLoading] = useState(false);
 
   // Screenshot mode state
   const [image, setImage] = useState<string | null>(null);
@@ -32,7 +35,38 @@ export function App() {
   const [detected, setDetected] = useState<DetectedItem[]>([]);
 
   const fileInputRef = useRef<HTMLInputElement>(null);
-  const results = searchItems(search);
+  const localResults = searchItems(search);
+
+  // Debounced API search
+  useEffect(() => {
+    if (!search || search.length < 2) {
+      setApiResults([]);
+      return;
+    }
+
+    const timer = setTimeout(async () => {
+      setApiLoading(true);
+      try {
+        const results = await searchItemsAPI(search);
+        setApiResults(results);
+      } catch {
+        setApiResults([]);
+      } finally {
+        setApiLoading(false);
+      }
+    }, 300); // 300ms debounce
+
+    return () => clearTimeout(timer);
+  }, [search]);
+
+  // Combine local and API results, dedupe by id
+  const allResults = [...localResults];
+  const localIds = new Set(localResults.map(i => i.id));
+  for (const item of apiResults) {
+    if (!localIds.has(item.id)) {
+      allResults.push(item);
+    }
+  }
 
   // Add single item (list mode)
   const addItem = (item: Item) => {
@@ -347,18 +381,23 @@ export function App() {
               className="search-input"
             />
             <div className="search-results">
-              {results.slice(0, 20).map(item => (
+              {apiLoading && <div className="search-loading">Searching...</div>}
+              {allResults.slice(0, 30).map(item => (
                 <button
                   key={item.id}
                   className={`search-item ${item.decision}`}
                   onClick={() => addItem(item)}
                 >
                   <span className="item-name">{item.name}</span>
+                  <span className="item-category">{item.category}</span>
                   <span className={`decision-badge ${item.decision}`}>
                     {item.decision.toUpperCase()}
                   </span>
                 </button>
               ))}
+              {!apiLoading && search.length >= 2 && allResults.length === 0 && (
+                <div className="search-empty">No items found</div>
+              )}
             </div>
             <button className="close-btn" onClick={() => setShowSearch(false)}>Cancel</button>
           </div>

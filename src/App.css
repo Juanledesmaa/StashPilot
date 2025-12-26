@@ -628,6 +628,51 @@ body {
   opacity: 0.9;
 }
 
+/* Search Loading & Empty */
+.search-loading {
+  text-align: center;
+  padding: 20px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.search-empty {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* Item Category in search */
+.item-category {
+  font-size: 11px;
+  color: var(--muted);
+  margin-left: 8px;
+  flex-shrink: 0;
+}
+
+.search-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  background: var(--bg);
+  border: none;
+  border-radius: 8px;
+  color: var(--text);
+  cursor: pointer;
+  text-align: left;
+  gap: 8px;
+}
+
+.search-item .item-name {
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 /* Responsive */
 @media (max-width: 400px) {
   .loot-reason {
@@ -636,5 +681,9 @@ body {
 
   .tabs {
     flex-direction: column;
+  }
+
+  .item-category {
+    display: none;
   }
 }
