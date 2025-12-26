@@ -119,6 +119,8 @@ function transformItem(apiItem) {
     recycleValue: Math.floor((apiItem.value || 0) * 0.4),
     decision,
     reason,
+    description: apiItem.description || '',
+    workbench: apiItem.workbench || '',
   };
 }
 
@@ -148,6 +150,8 @@ export interface Item {
   recycleValue: number;
   decision: Decision;
   reason: string;
+  description: string;
+  workbench: string;
 }
 
 export const ITEMS: Item[] = ${JSON.stringify(items, null, 2)};

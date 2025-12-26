@@ -353,8 +353,15 @@ export function App() {
                   className={`search-item ${item.decision}`}
                   onClick={() => addItem(item)}
                 >
-                  <span className="item-name">{item.name}</span>
-                  <span className="item-category">{item.category}</span>
+                  <div className="search-item-info">
+                    <span className="item-name">{item.name}</span>
+                    {item.description && (
+                      <span className="item-description">{item.description}</span>
+                    )}
+                    {item.workbench && (
+                      <span className="item-workbench">Crafted at: {item.workbench}</span>
+                    )}
+                  </div>
                   <span className={`decision-badge ${item.decision}`}>
                     {item.decision.toUpperCase()}
                   </span>
@@ -429,6 +436,12 @@ function LootRow({ loot, onRemove, onQtyChange }: {
       <div className="loot-info">
         <span className="loot-name">{item.name}</span>
         <span className="loot-reason">{item.reason}</span>
+        {item.description && (
+          <span className="loot-description">{item.description}</span>
+        )}
+        {item.workbench && (
+          <span className="loot-workbench">Crafted at: {item.workbench}</span>
+        )}
       </div>
       <div className="loot-controls">
         <button className="qty-btn" onClick={() => onQtyChange(item.id, qty - 1)}>−</button>

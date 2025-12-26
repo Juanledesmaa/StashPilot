@@ -12,6 +12,8 @@ export interface Item {
   recycleValue: number;
   decision: Decision;
   reason: string;
+  description: string;
+  workbench: string;
 }
 
 export const ITEMS: Item[] = [
@@ -23,7 +25,9 @@ export const ITEMS: Item[] = [
     "sellValue": 7000,
     "recycleValue": 2800,
     "decision": "sell",
-    "reason": "High value consumable - 7,000cr"
+    "reason": "High value consumable - 7,000cr",
+    "description": "A playable acoustic guitar used to attract ARC's attention and impress other Raiders.",
+    "workbench": ""
   },
   {
     "id": "adrenaline-shot",
@@ -33,7 +37,9 @@ export const ITEMS: Item[] = [
     "sellValue": 300,
     "recycleValue": 120,
     "decision": "keep",
-    "reason": "Consumable - use in raids"
+    "reason": "Consumable - use in raids",
+    "description": "A serum that fully restores stamina and temporarily increases stamina regeneration",
+    "workbench": "Med Stations 1"
   },
   {
     "id": "advanced-arc-powercell",
@@ -43,7 +49,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "keep",
-    "reason": "ARC material - needed for upgrades"
+    "reason": "ARC material - needed for upgrades",
+    "description": "Very valuable resource that drops from certain ARC enemies",
+    "workbench": ""
   },
   {
     "id": "advanced-electrical-components",
@@ -53,7 +61,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1750,
     "recycleValue": 700,
     "decision": "keep",
-    "reason": "Crafting material - needed for upgrades"
+    "reason": "Crafting material - needed for upgrades",
+    "description": "Used to craft a wide range of items. Can be recycled into crafting materials.",
+    "workbench": "Refiner"
   },
   {
     "id": "advanced-mechanical-components",
@@ -63,7 +73,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1750,
     "recycleValue": 700,
     "decision": "keep",
-    "reason": "Crafting material - needed for upgrades"
+    "reason": "Crafting material - needed for upgrades",
+    "description": "Mostly used to craft advanced weapons. Can be recycled into crafting materials.",
+    "workbench": "Refiner"
   },
   {
     "id": "agave",
@@ -73,7 +85,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "keep",
-    "reason": "Valuable natural resource"
+    "reason": "Valuable natural resource",
+    "description": "A piece of an agave leaf. Can be used to regain a small amount of health.",
+    "workbench": ""
   },
   {
     "id": "agave-juice",
@@ -83,7 +97,9 @@ export const ITEMS: Item[] = [
     "sellValue": 123,
     "recycleValue": 49,
     "decision": "keep",
-    "reason": "Consumable - use in raids"
+    "reason": "Consumable - use in raids",
+    "description": "A concoction that temporarily increases stamina regeneration, at a small initial cost to health.",
+    "workbench": ""
   },
   {
     "id": "air-freshener",
@@ -93,7 +109,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "sell",
-    "reason": "Trinket - vendor for 2,000cr"
+    "reason": "Trinket - vendor for 2,000cr",
+    "description": "May be worth a few coins.",
+    "workbench": ""
   },
   {
     "id": "alarm-clock",
@@ -103,7 +121,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "angled-grip-i",
@@ -113,7 +133,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "keep",
-    "reason": "Weapon mod - improves your guns"
+    "reason": "Weapon mod - improves your guns",
+    "description": "Slightly reduces horizontal recoil.",
+    "workbench": "Weapon Bench"
   },
   {
     "id": "angled-grip-ii",
@@ -123,7 +145,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "keep",
-    "reason": "Weapon mod - improves your guns"
+    "reason": "Weapon mod - improves your guns",
+    "description": "Moderately reduces horizontal recoil.",
+    "workbench": ""
   },
   {
     "id": "angled-grip-ii-recipe",
@@ -133,7 +157,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft an Angled Grip II",
+    "workbench": ""
   },
   {
     "id": "angled-grip-iii",
@@ -143,7 +169,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Weapon mod - improves your guns"
+    "reason": "Weapon mod - improves your guns",
+    "description": "Significantly reduces horizontal recoil.",
+    "workbench": ""
   },
   {
     "id": "angled-grip-iii-recipe",
@@ -153,7 +181,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft an Angled Grip III",
+    "workbench": ""
   },
   {
     "id": "antiseptic",
@@ -163,7 +193,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "keep",
-    "reason": "Crafting material - needed for upgrades"
+    "reason": "Crafting material - needed for upgrades",
+    "description": "Used to craft medical supplies. Can be recycled into chemicals.",
+    "workbench": "Refiner"
   },
   {
     "id": "anvil-recipe",
@@ -173,7 +205,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft an Anvil - Has high damage output and headshot damage, but slow handling.",
+    "workbench": "Weapon Bench"
   },
   {
     "id": "anvil-i",
@@ -183,7 +217,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Weapon worth 5,000cr"
+    "reason": "Weapon worth 5,000cr",
+    "description": "Single-action hand cannon with high damage output and headshot damage, but slow handling.",
+    "workbench": "Weapon Bench 2"
   },
   {
     "id": "anvil-ii",
@@ -193,7 +229,9 @@ export const ITEMS: Item[] = [
     "sellValue": 7000,
     "recycleValue": 2800,
     "decision": "keep",
-    "reason": "Weapon worth 7,000cr"
+    "reason": "Weapon worth 7,000cr",
+    "description": "Single-action hand cannon with high damage output and headshot damage, but slow handling.",
+    "workbench": "Weapon Bench II"
   },
   {
     "id": "anvil-iii",
@@ -203,7 +241,9 @@ export const ITEMS: Item[] = [
     "sellValue": 10000,
     "recycleValue": 4000,
     "decision": "keep",
-    "reason": "Weapon worth 10,000cr"
+    "reason": "Weapon worth 10,000cr",
+    "description": "Single-action hand cannon with high damage output and headshot damage, but slow handling.",
+    "workbench": "Weapon Bench"
   },
   {
     "id": "anvil-iv",
@@ -213,7 +253,9 @@ export const ITEMS: Item[] = [
     "sellValue": 13000,
     "recycleValue": 5200,
     "decision": "keep",
-    "reason": "Weapon worth 13,000cr"
+    "reason": "Weapon worth 13,000cr",
+    "description": "Single-action hand cannon with high damage output and headshot damage, but slow handling.",
+    "workbench": ""
   },
   {
     "id": "anvil-splitter",
@@ -223,7 +265,9 @@ export const ITEMS: Item[] = [
     "sellValue": 7000,
     "recycleValue": 2800,
     "decision": "keep",
-    "reason": "Weapon mod - improves your guns"
+    "reason": "Weapon mod - improves your guns",
+    "description": "Compatible with: Anvil  - Tech mod for the Anvil that replaces its bullets with ones that split into 4 weaker projectiles.",
+    "workbench": "Gunsmith III"
   },
   {
     "id": "anvil-splitter-recipe",
@@ -233,7 +277,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft an Anvil Splitter",
+    "workbench": ""
   },
   {
     "id": "aphelion-rifle",
@@ -243,7 +289,9 @@ export const ITEMS: Item[] = [
     "sellValue": 27500,
     "recycleValue": 11000,
     "decision": "keep",
-    "reason": "Weapon worth 27,500cr"
+    "reason": "Weapon worth 27,500cr",
+    "description": "Fires high velocity energy rounds.",
+    "workbench": ""
   },
   {
     "id": "aphelion-rifle-blueprint",
@@ -253,7 +301,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft an Aphelion Rifle",
+    "workbench": ""
   },
   {
     "id": "apricot",
@@ -263,7 +313,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "sell",
-    "reason": "Nature item - sell for 640cr"
+    "reason": "Nature item - sell for 640cr",
+    "description": "A sun ripe apricot. Can be consumed for a small amount of stamina.",
+    "workbench": ""
   },
   {
     "id": "arc-alloy",
@@ -273,7 +325,9 @@ export const ITEMS: Item[] = [
     "sellValue": 200,
     "recycleValue": 80,
     "decision": "keep",
-    "reason": "ARC material - needed for upgrades"
+    "reason": "ARC material - needed for upgrades",
+    "description": "Obtained from ARC enemies or activities, or by recycling certain ARC parts. Used to craft components.",
+    "workbench": ""
   },
   {
     "id": "arc-circuitry",
@@ -283,7 +337,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "keep",
-    "reason": "ARC material - needed for upgrades"
+    "reason": "ARC material - needed for upgrades",
+    "description": " Obtained from ARC enemies or activities. Used to craft components. Can be recycled into ARC Alloy.",
+    "workbench": "Refiner II"
   },
   {
     "id": "arc-coolant",
@@ -293,7 +349,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Obtained from ARC enemies or activities. Can be recycled into chemicals",
+    "workbench": ""
   },
   {
     "id": "arc-flex-rubber",
@@ -303,7 +361,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Obtained from ARC enemies or activities. Can be recycled into rubber.",
+    "workbench": ""
   },
   {
     "id": "arc-motion-core",
@@ -313,7 +373,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "keep",
-    "reason": "ARC material - needed for upgrades"
+    "reason": "ARC material - needed for upgrades",
+    "description": "Obtained from ARC enemies or activities. Used to craft components. Can be recycled into ARC Alloy.",
+    "workbench": "Refiner II"
   },
   {
     "id": "arc-performance-steel",
@@ -323,7 +385,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Obtained from ARC enemies or activities. Can be recycled into scrap metal.",
+    "workbench": ""
   },
   {
     "id": "arc-powercell",
@@ -333,7 +397,9 @@ export const ITEMS: Item[] = [
     "sellValue": 270,
     "recycleValue": 108,
     "decision": "keep",
-    "reason": "ARC material - needed for upgrades"
+    "reason": "ARC material - needed for upgrades",
+    "description": "Valuable resource that drops from all ARC enemies. Used to craft: Shield Recharger",
+    "workbench": ""
   },
   {
     "id": "arc-synthetic-resin",
@@ -343,7 +409,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Obtained from ARC enemies or activities. Can be recycled into plastic.",
+    "workbench": ""
   },
   {
     "id": "arc-thermo-lining",
@@ -353,7 +421,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Obtained from ARC enemies and activities. Can be recycled into fabric.",
+    "workbench": ""
   },
   {
     "id": "arpeggio-i",
@@ -363,7 +433,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5500,
     "recycleValue": 2200,
     "decision": "keep",
-    "reason": "Weapon worth 5,500cr"
+    "reason": "Weapon worth 5,500cr",
+    "description": "Has decent damage output and accuracy.",
+    "workbench": "Weapon Bench"
   },
   {
     "id": "arpeggio-ii",
@@ -373,7 +445,9 @@ export const ITEMS: Item[] = [
     "sellValue": 8000,
     "recycleValue": 3200,
     "decision": "keep",
-    "reason": "Weapon worth 8,000cr"
+    "reason": "Weapon worth 8,000cr",
+    "description": "A 3-round burst assault rifle with decent damage output and accuracy.",
+    "workbench": "Weapon Bench I"
   },
   {
     "id": "arpeggio-iii",
@@ -383,7 +457,9 @@ export const ITEMS: Item[] = [
     "sellValue": 11500,
     "recycleValue": 4600,
     "decision": "keep",
-    "reason": "Weapon worth 11,500cr"
+    "reason": "Weapon worth 11,500cr",
+    "description": "A 3-round burst assault rifle with decent damage output and accuracy.",
+    "workbench": ""
   },
   {
     "id": "arpeggio-iv",
@@ -393,7 +469,9 @@ export const ITEMS: Item[] = [
     "sellValue": 15000,
     "recycleValue": 6000,
     "decision": "keep",
-    "reason": "Weapon worth 15,000cr"
+    "reason": "Weapon worth 15,000cr",
+    "description": "A 3-round burst assault rifle with decent damage output and accuracy.",
+    "workbench": ""
   },
   {
     "id": "assorted-seeds",
@@ -403,7 +481,9 @@ export const ITEMS: Item[] = [
     "sellValue": 100,
     "recycleValue": 40,
     "decision": "sell",
-    "reason": "Nature item - sell for 100cr"
+    "reason": "Nature item - sell for 100cr",
+    "description": "A handful of seeds. Celeste might be looking for these.",
+    "workbench": ""
   },
   {
     "id": "bandage",
@@ -413,7 +493,9 @@ export const ITEMS: Item[] = [
     "sellValue": 250,
     "recycleValue": 100,
     "decision": "keep",
-    "reason": "Consumable - use in raids"
+    "reason": "Consumable - use in raids",
+    "description": "A medical item that gradually restores health over time.",
+    "workbench": "Basic Bench or Med Station 1"
   },
   {
     "id": "barricade-kit",
@@ -423,7 +505,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "keep",
-    "reason": "Consumable - use in raids"
+    "reason": "Consumable - use in raids",
+    "description": "A deployable cover that can block incoming damage until it breaks.",
+    "workbench": "Utility Bench 1"
   },
   {
     "id": "barricade-kit-recipe",
@@ -433,7 +517,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Barricade Kit",
+    "workbench": ""
   },
   {
     "id": "bastion-part",
@@ -443,7 +529,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "A salvaged component from a Bastion unit. Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "battery",
@@ -453,7 +541,9 @@ export const ITEMS: Item[] = [
     "sellValue": 250,
     "recycleValue": 100,
     "decision": "keep",
-    "reason": "ARC material - needed for upgrades"
+    "reason": "ARC material - needed for upgrades",
+    "description": "Used to craft medical supplies. Can be recycled into scrap metal.",
+    "workbench": ""
   },
   {
     "id": "bettina-blueprint",
@@ -463,7 +553,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Has slow fire rate and high damage output.",
+    "workbench": "Gunsmith III"
   },
   {
     "id": "bettina-i",
@@ -473,7 +565,9 @@ export const ITEMS: Item[] = [
     "sellValue": 8000,
     "recycleValue": 3200,
     "decision": "keep",
-    "reason": "Weapon worth 8,000cr"
+    "reason": "Weapon worth 8,000cr",
+    "description": "Has slow fire rate and high damage output.",
+    "workbench": "Gunsmith III"
   },
   {
     "id": "bettina-ii",
@@ -483,7 +577,9 @@ export const ITEMS: Item[] = [
     "sellValue": 11000,
     "recycleValue": 4400,
     "decision": "keep",
-    "reason": "Weapon worth 11,000cr"
+    "reason": "Weapon worth 11,000cr",
+    "description": "Has slow fire rate and high damage output.",
+    "workbench": "Weapon Bench"
   },
   {
     "id": "bettina-iii",
@@ -493,7 +589,9 @@ export const ITEMS: Item[] = [
     "sellValue": 14000,
     "recycleValue": 5600,
     "decision": "keep",
-    "reason": "Weapon worth 14,000cr"
+    "reason": "Weapon worth 14,000cr",
+    "description": "Has slow fire rate and high damage output.",
+    "workbench": "Weapon Bench"
   },
   {
     "id": "bettina-iv",
@@ -503,7 +601,9 @@ export const ITEMS: Item[] = [
     "sellValue": 18000,
     "recycleValue": 7200,
     "decision": "keep",
-    "reason": "Weapon worth 18,000cr"
+    "reason": "Weapon worth 18,000cr",
+    "description": "Has slow rate of fire and high damage output.",
+    "workbench": "Weapon Bench"
   },
   {
     "id": "bicycle-pump",
@@ -513,7 +613,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "binoculars",
@@ -523,7 +625,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "keep",
-    "reason": "Gadget - useful utility item"
+    "reason": "Gadget - useful utility item",
+    "description": "A basic pair of binoculars with two levels of magnification.",
+    "workbench": "Utility Bench"
   },
   {
     "id": "bison-driver",
@@ -533,7 +637,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2500,
     "recycleValue": 1000,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "A critical control component from a Bison vehicle.",
+    "workbench": ""
   },
   {
     "id": "blaze-grenade",
@@ -543,7 +649,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1600,
     "recycleValue": 640,
     "decision": "keep",
-    "reason": "Throwable - useful in combat"
+    "reason": "Throwable - useful in combat",
+    "description": "A grenade that detonates on impact, covering an area in fire that deals damage over time.",
+    "workbench": "Explosive Bench 3"
   },
   {
     "id": "blaze-grenade-blueprint",
@@ -553,7 +661,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Blaze Grenade",
+    "workbench": ""
   },
   {
     "id": "blaze-grenade-trap",
@@ -563,7 +673,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "keep",
-    "reason": "Consumable - use in raids"
+    "reason": "Consumable - use in raids",
+    "description": "A laser trip wire that detonates a Blaze Grenade",
+    "workbench": ""
   },
   {
     "id": "bloated-tuna-can",
@@ -573,7 +685,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "sell",
-    "reason": "Trinket - vendor for 1,000cr"
+    "reason": "Trinket - vendor for 1,000cr",
+    "description": "A can of tuna, suspiciously bloated.",
+    "workbench": ""
   },
   {
     "id": "blue-gate-cellar-key",
@@ -583,7 +697,9 @@ export const ITEMS: Item[] = [
     "sellValue": 100,
     "recycleValue": 40,
     "decision": "keep",
-    "reason": "Key - opens locked areas"
+    "reason": "Key - opens locked areas",
+    "description": "Unlocks certain cellar doors near the Blue Gate.",
+    "workbench": ""
   },
   {
     "id": "blue-gate-communication-tower-key",
@@ -593,7 +709,9 @@ export const ITEMS: Item[] = [
     "sellValue": 100,
     "recycleValue": 40,
     "decision": "keep",
-    "reason": "Key - opens locked areas"
+    "reason": "Key - opens locked areas",
+    "description": "Unlocks a door by the Communication Tower near the Blue Gate",
+    "workbench": ""
   },
   {
     "id": "blue-gate-confiscation-room-key",
@@ -603,7 +721,9 @@ export const ITEMS: Item[] = [
     "sellValue": 100,
     "recycleValue": 40,
     "decision": "keep",
-    "reason": "Key - opens locked areas"
+    "reason": "Key - opens locked areas",
+    "description": "Unlocks a door to the confiscated goods area within the Blue Gate tunnels",
+    "workbench": ""
   },
   {
     "id": "blue-gate-village-key",
@@ -613,7 +733,9 @@ export const ITEMS: Item[] = [
     "sellValue": 100,
     "recycleValue": 40,
     "decision": "keep",
-    "reason": "Key - opens locked areas"
+    "reason": "Key - opens locked areas",
+    "description": "Unlocks a door to one of the old village buildings near the Blue Gate.",
+    "workbench": ""
   },
   {
     "id": "blue-light-stick",
@@ -623,7 +745,9 @@ export const ITEMS: Item[] = [
     "sellValue": 150,
     "recycleValue": 60,
     "decision": "keep",
-    "reason": "Consumable - use in raids"
+    "reason": "Consumable - use in raids",
+    "description": "A throwable chemical light that illuminates the area around it.",
+    "workbench": ""
   },
   {
     "id": "blue-light-stick-blueprint",
@@ -633,7 +757,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Blue Light Stick.",
+    "workbench": ""
   },
   {
     "id": "bobcat-i-recipe",
@@ -643,7 +769,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Bobcat I",
+    "workbench": ""
   },
   {
     "id": "bobcat-i",
@@ -653,7 +781,9 @@ export const ITEMS: Item[] = [
     "sellValue": 13000,
     "recycleValue": 5200,
     "decision": "keep",
-    "reason": "Weapon worth 13,000cr"
+    "reason": "Weapon worth 13,000cr",
+    "description": "Fully automatic SMG with high fire rate but low accuracy.",
+    "workbench": "Weapon Bench 3"
   },
   {
     "id": "bobcat-ii",
@@ -663,7 +793,9 @@ export const ITEMS: Item[] = [
     "sellValue": 17000,
     "recycleValue": 6800,
     "decision": "keep",
-    "reason": "Weapon worth 17,000cr"
+    "reason": "Weapon worth 17,000cr",
+    "description": "Fully automatic SMG with high fire rate but low accuracy.",
+    "workbench": "Weapon Bench"
   },
   {
     "id": "bobcat-iii",
@@ -673,7 +805,9 @@ export const ITEMS: Item[] = [
     "sellValue": 22000,
     "recycleValue": 8800,
     "decision": "keep",
-    "reason": "Weapon worth 22,000cr"
+    "reason": "Weapon worth 22,000cr",
+    "description": "Fully automatic SMG with high fire rate but low accuracy.",
+    "workbench": ""
   },
   {
     "id": "bobcat-iv",
@@ -683,7 +817,9 @@ export const ITEMS: Item[] = [
     "sellValue": 27000,
     "recycleValue": 10800,
     "decision": "keep",
-    "reason": "Weapon worth 27,000cr"
+    "reason": "Weapon worth 27,000cr",
+    "description": "Fully automatic SMG with high fire rate but low accuracy.",
+    "workbench": ""
   },
   {
     "id": "bombardier-cell",
@@ -693,7 +829,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials",
+    "workbench": ""
   },
   {
     "id": "breathtaking-snow-globe",
@@ -703,7 +841,9 @@ export const ITEMS: Item[] = [
     "sellValue": 7000,
     "recycleValue": 2800,
     "decision": "sell",
-    "reason": "Trinket - vendor for 7,000cr"
+    "reason": "Trinket - vendor for 7,000cr",
+    "description": "The envy of every Speranzan. Proof that this world was once thriving and magical.",
+    "workbench": ""
   },
   {
     "id": "broken-flashlight",
@@ -713,7 +853,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "broken-guidance-system",
@@ -723,7 +865,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "broken-handcuffs",
@@ -733,7 +877,9 @@ export const ITEMS: Item[] = [
     "sellValue": 270,
     "recycleValue": 108,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "broken-handheld-radio",
@@ -743,7 +889,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "broken-riot-shield",
@@ -753,7 +901,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "broken-taser",
@@ -763,7 +913,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "buried-city-hospital-key",
@@ -773,7 +925,9 @@ export const ITEMS: Item[] = [
     "sellValue": 100,
     "recycleValue": 40,
     "decision": "keep",
-    "reason": "Key - opens locked areas"
+    "reason": "Key - opens locked areas",
+    "description": "Opens a locked room in the North West corner of the Hospital in Buried City on the Second Floor.",
+    "workbench": ""
   },
   {
     "id": "buried-city-jkv-employee-access-card",
@@ -783,7 +937,9 @@ export const ITEMS: Item[] = [
     "sellValue": 100,
     "recycleValue": 40,
     "decision": "keep",
-    "reason": "Key - opens locked areas"
+    "reason": "Key - opens locked areas",
+    "description": "Unlocks a door in the J Kozma Ventures company building in Buried City",
+    "workbench": ""
   },
   {
     "id": "buried-city-residential-master-key",
@@ -793,7 +949,9 @@ export const ITEMS: Item[] = [
     "sellValue": 100,
     "recycleValue": 40,
     "decision": "keep",
-    "reason": "Key - opens locked areas"
+    "reason": "Key - opens locked areas",
+    "description": "Unlocks certain apartment doors in Buried City",
+    "workbench": ""
   },
   {
     "id": "buried-city-town-hall-key",
@@ -803,7 +961,9 @@ export const ITEMS: Item[] = [
     "sellValue": 100,
     "recycleValue": 40,
     "decision": "keep",
-    "reason": "Key - opens locked areas"
+    "reason": "Key - opens locked areas",
+    "description": "Unlocks the door to the Town Hall in Buried City",
+    "workbench": ""
   },
   {
     "id": "burltetta-recipe",
@@ -813,7 +973,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Burletta",
+    "workbench": ""
   },
   {
     "id": "burletta-i",
@@ -823,7 +985,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2900,
     "recycleValue": 1160,
     "decision": "keep",
-    "reason": "Weapon worth 2,900cr"
+    "reason": "Weapon worth 2,900cr",
+    "description": "Semi-automatic pistol with decent damage output and accuracy. Can be fired as fast as you can pull the trigger.",
+    "workbench": "Weapon Bench 2"
   },
   {
     "id": "burletta-ii",
@@ -833,7 +997,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Weapon worth 5,000cr"
+    "reason": "Weapon worth 5,000cr",
+    "description": "Semi-automatic pistol with decent damage output and accuracy. Can be fired as fast as you can pull the trigger.",
+    "workbench": "Weapon Bench I"
   },
   {
     "id": "burletta-iiii",
@@ -843,7 +1009,9 @@ export const ITEMS: Item[] = [
     "sellValue": 7000,
     "recycleValue": 2800,
     "decision": "keep",
-    "reason": "Weapon worth 7,000cr"
+    "reason": "Weapon worth 7,000cr",
+    "description": "Semi-automatic pistol with decent damage output and accuracy. Can be fired as fast as you can pull the trigger.",
+    "workbench": "Weapon Bench I"
   },
   {
     "id": "burletta-iv",
@@ -853,7 +1021,9 @@ export const ITEMS: Item[] = [
     "sellValue": 10000,
     "recycleValue": 4000,
     "decision": "keep",
-    "reason": "Weapon worth 10,000cr"
+    "reason": "Weapon worth 10,000cr",
+    "description": "Semi-automatic pistol with decent damage output and accuracy. Can be fired as fast as you can pull the trigger.",
+    "workbench": "Weapon Bench I"
   },
   {
     "id": "burned-arc-circuitry",
@@ -863,7 +1033,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "burnt-out-candles",
@@ -873,7 +1045,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "sell",
-    "reason": "Trinket - vendor for 640cr"
+    "reason": "Trinket - vendor for 640cr",
+    "description": "After the grid fell candles became the preferred source of light for many. Unlike electricity, a good old candle will never fail you. Unless it's windy. Or raining. Or...",
+    "workbench": ""
   },
   {
     "id": "camera-lens",
@@ -883,7 +1057,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "candleberries",
@@ -893,7 +1069,9 @@ export const ITEMS: Item[] = [
     "sellValue": 460,
     "recycleValue": 184,
     "decision": "sell",
-    "reason": "Nature item - sell for 460cr"
+    "reason": "Nature item - sell for 460cr",
+    "description": "A waxy berry that grows only during a small window each year. People have depended on them to make candles, foods and medicine for ages.",
+    "workbench": ""
   },
   {
     "id": "candle-holder",
@@ -903,7 +1081,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "canister",
@@ -913,7 +1093,9 @@ export const ITEMS: Item[] = [
     "sellValue": 300,
     "recycleValue": 120,
     "decision": "keep",
-    "reason": "ARC material - needed for upgrades"
+    "reason": "ARC material - needed for upgrades",
+    "description": "Used to craft a wide range of items. Can be recycled into plastic.",
+    "workbench": ""
   },
   {
     "id": "cans-backpack-attachment",
@@ -923,7 +1105,9 @@ export const ITEMS: Item[] = [
     "sellValue": 0,
     "recycleValue": 0,
     "decision": "keep",
-    "reason": "Cosmetic or special item"
+    "reason": "Cosmetic or special item",
+    "description": "A set of cans that are a backpack attachment from the quest Safe Passage.",
+    "workbench": ""
   },
   {
     "id": "cat-bed",
@@ -933,7 +1117,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "sell",
-    "reason": "Trinket - vendor for 1,000cr"
+    "reason": "Trinket - vendor for 1,000cr",
+    "description": "At least a tiny bit more comfortable than your face.",
+    "workbench": ""
   },
   {
     "id": "chemicals",
@@ -943,7 +1129,9 @@ export const ITEMS: Item[] = [
     "sellValue": 50,
     "recycleValue": 20,
     "decision": "keep",
-    "reason": "Used to craft medical supplies, explosives, and utility items."
+    "reason": "Used to craft medical supplies, explosives, and utility items.",
+    "description": "Used to craft medical supplies, explosives, and utility items.",
+    "workbench": ""
   },
   {
     "id": "coffee-pot",
@@ -953,7 +1141,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "sell",
-    "reason": "Trinket - vendor for 1,000cr"
+    "reason": "Trinket - vendor for 1,000cr",
+    "description": "The power to face a new day, one drip at a time.",
+    "workbench": ""
   },
   {
     "id": "combat-mk-1",
@@ -963,7 +1153,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "keep",
-    "reason": "Basic combat augment. Supports stronger shields, but with limited backpack capacity and Quick Use slots."
+    "reason": "Basic combat augment. Supports stronger shields, but with limited backpack capacity and Quick Use slots.",
+    "description": "Basic combat augment. Supports stronger shields, but with limited backpack capacity and Quick Use slots.",
+    "workbench": "Equipment Bench"
   },
   {
     "id": "combat-mk-2",
@@ -973,7 +1165,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "keep",
-    "reason": "A Combat augment is more focused on maneuverability than absorbing damage."
+    "reason": "A Combat augment is more focused on maneuverability than absorbing damage.",
+    "description": "A Combat augment is more focused on maneuverability than absorbing damage.",
+    "workbench": "Equipment Bench"
   },
   {
     "id": "combat-mk-3-aggressive",
@@ -983,7 +1177,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "sell",
-    "reason": "High value - sell for 5,000cr"
+    "reason": "High value - sell for 5,000cr",
+    "description": "An improved version of the Combat II augment. Supports more shield types, and comes with extra space for grenades.",
+    "workbench": "Gear Bench III"
   },
   {
     "id": "combat-mk3-aggressive-blueprint",
@@ -993,7 +1189,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "An improved version of the Combat II augment. Supports more shield types and comes with extra space for grenades",
+    "workbench": ""
   },
   {
     "id": "combat-mk3-flanking",
@@ -1003,7 +1201,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "sell",
-    "reason": "High value - sell for 5,000cr"
+    "reason": "High value - sell for 5,000cr",
+    "description": "A Combat augment more focused on maneuverability than absorbing damage.",
+    "workbench": "Gunsmith III"
   },
   {
     "id": "combat-mk-3-flanking",
@@ -1013,7 +1213,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Combat Mk. 3 (Flanking)",
+    "workbench": ""
   },
   {
     "id": "compensator-i",
@@ -1023,7 +1225,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "keep",
-    "reason": "Weapon mod - improves your guns"
+    "reason": "Weapon mod - improves your guns",
+    "description": "Slightly reduces per-shot dispersion.",
+    "workbench": "Gunsmith"
   },
   {
     "id": "compensator-ii",
@@ -1033,7 +1237,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "keep",
-    "reason": "Weapon mod - improves your guns"
+    "reason": "Weapon mod - improves your guns",
+    "description": "Moderately reduces per-shot dispersion.",
+    "workbench": "Gunsmith II"
   },
   {
     "id": "compensator-ii-recipe",
@@ -1043,7 +1249,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Compensator II",
+    "workbench": ""
   },
   {
     "id": "compensator-iii",
@@ -1053,7 +1261,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Weapon mod - improves your guns"
+    "reason": "Weapon mod - improves your guns",
+    "description": "30% Reduced Max-Shot Dispersion",
+    "workbench": "Gunsmith III"
   },
   {
     "id": "compensator-iii-recipe",
@@ -1063,7 +1273,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Compensator III",
+    "workbench": ""
   },
   {
     "id": "complex-gun-parts",
@@ -1073,7 +1285,9 @@ export const ITEMS: Item[] = [
     "sellValue": 3000,
     "recycleValue": 1200,
     "decision": "keep",
-    "reason": "ARC material - needed for upgrades"
+    "reason": "ARC material - needed for upgrades",
+    "description": "Used to craft advanced weapons.",
+    "workbench": "Refiner"
   },
   {
     "id": "complex-gun-parts-blueprint",
@@ -1083,7 +1297,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Used to craft advanced weapons.",
+    "workbench": ""
   },
   {
     "id": "coolant",
@@ -1093,7 +1309,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "cooling-coil",
@@ -1103,7 +1321,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "cooling-fan",
@@ -1113,7 +1333,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "cracked-bioscanner",
@@ -1123,7 +1345,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "crude-explosives",
@@ -1133,7 +1357,9 @@ export const ITEMS: Item[] = [
     "sellValue": 270,
     "recycleValue": 108,
     "decision": "keep",
-    "reason": "Crafting material - needed for upgrades"
+    "reason": "Crafting material - needed for upgrades",
+    "description": "Used to craft explosives. Can be recycled into crafting materials.",
+    "workbench": "Refiner"
   },
   {
     "id": "crumpled-plastic-bottle",
@@ -1143,7 +1369,9 @@ export const ITEMS: Item[] = [
     "sellValue": 270,
     "recycleValue": 108,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into plastic parts.",
+    "workbench": ""
   },
   {
     "id": "damaged-arc-motion-core",
@@ -1153,7 +1381,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into ARC Alloy.",
+    "workbench": ""
   },
   {
     "id": "damaged-arc-powercell",
@@ -1163,7 +1393,9 @@ export const ITEMS: Item[] = [
     "sellValue": 293,
     "recycleValue": 117,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "damaged-fireball-burner",
@@ -1173,7 +1405,9 @@ export const ITEMS: Item[] = [
     "sellValue": 270,
     "recycleValue": 108,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "damaged-heat-sink",
@@ -1183,7 +1417,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "danaged-hornet-driver",
@@ -1193,7 +1429,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials",
+    "workbench": ""
   },
   {
     "id": "damaged-rocketeer-part",
@@ -1203,7 +1441,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into ARC Alloy.",
+    "workbench": ""
   },
   {
     "id": "damaged-tick-pod",
@@ -1213,7 +1453,9 @@ export const ITEMS: Item[] = [
     "sellValue": 270,
     "recycleValue": 108,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials",
+    "workbench": ""
   },
   {
     "id": "damaged-wasp-driver",
@@ -1223,7 +1465,9 @@ export const ITEMS: Item[] = [
     "sellValue": 270,
     "recycleValue": 108,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "dam-control-center-tower-key",
@@ -1233,7 +1477,9 @@ export const ITEMS: Item[] = [
     "sellValue": 100,
     "recycleValue": 40,
     "decision": "keep",
-    "reason": "Key - opens locked areas"
+    "reason": "Key - opens locked areas",
+    "description": "Unlocks a door in the Control Centre Tower on the top floor.",
+    "workbench": ""
   },
   {
     "id": "dam-staff-room-key",
@@ -1243,7 +1489,9 @@ export const ITEMS: Item[] = [
     "sellValue": 100,
     "recycleValue": 40,
     "decision": "keep",
-    "reason": "Key - opens locked areas"
+    "reason": "Key - opens locked areas",
+    "description": "Unlocks the Dam Staff Room in the Control Tower.",
+    "workbench": ""
   },
   {
     "id": "dam-surveillance-key",
@@ -1253,7 +1501,9 @@ export const ITEMS: Item[] = [
     "sellValue": 100,
     "recycleValue": 40,
     "decision": "keep",
-    "reason": "Key - opens locked areas"
+    "reason": "Key - opens locked areas",
+    "description": "Unlocks a door in the Water Treatment Control building in The Dam.",
+    "workbench": ""
   },
   {
     "id": "dam-testing-annex-key",
@@ -1263,7 +1513,9 @@ export const ITEMS: Item[] = [
     "sellValue": 100,
     "recycleValue": 40,
     "decision": "keep",
-    "reason": "Key - opens locked areas"
+    "reason": "Key - opens locked areas",
+    "description": "Unlocks a door in the Testing Annex on Dam Battlegrounds.",
+    "workbench": ""
   },
   {
     "id": "dam-utility-key",
@@ -1273,7 +1525,9 @@ export const ITEMS: Item[] = [
     "sellValue": 100,
     "recycleValue": 40,
     "decision": "keep",
-    "reason": "Location is currently unknown except that it is on Dam Battlegrounds."
+    "reason": "Location is currently unknown except that it is on Dam Battlegrounds.",
+    "description": "Location is currently unknown except that it is on Dam Battlegrounds.",
+    "workbench": ""
   },
   {
     "id": "dart-board",
@@ -1283,7 +1537,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "sell",
-    "reason": "Trinket - vendor for 2,000cr"
+    "reason": "Trinket - vendor for 2,000cr",
+    "description": "Some Raiders use it to practice dexterity. Others just like throwing things at other things.",
+    "workbench": ""
   },
   {
     "id": "deadline",
@@ -1293,7 +1549,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "sell",
-    "reason": "High value consumable - 5,000cr"
+    "reason": "High value consumable - 5,000cr",
+    "description": "A mine that deals damage to anything within its radius once the timer runs out",
+    "workbench": "Explosives Bench III"
   },
   {
     "id": "deadline-blueprint",
@@ -1303,7 +1561,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Deadline Mine",
+    "workbench": ""
   },
   {
     "id": "defibrillator",
@@ -1313,7 +1573,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "keep",
-    "reason": "Consumable - use in raids"
+    "reason": "Consumable - use in raids",
+    "description": "An injection that quickly revives downed raiders and restores some health.",
+    "workbench": "Med Station 3"
   },
   {
     "id": "defibrillator-recipe",
@@ -1323,7 +1585,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Defibrillator",
+    "workbench": "Medical Lab II"
   },
   {
     "id": "deflated-football",
@@ -1333,7 +1597,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Just by looking at this, you too start to feel slightly deflated.",
+    "workbench": ""
   },
   {
     "id": "degraded-arc-rubber",
@@ -1343,7 +1609,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "diving-googles",
@@ -1353,7 +1621,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "dog-collar",
@@ -1363,7 +1633,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "After all this time, you can still smell the goodness.",
+    "workbench": ""
   },
   {
     "id": "door-blocker",
@@ -1373,7 +1645,9 @@ export const ITEMS: Item[] = [
     "sellValue": 270,
     "recycleValue": 108,
     "decision": "keep",
-    "reason": "Consumable - use in raids"
+    "reason": "Consumable - use in raids",
+    "description": "A locking mechanism that can be placed on large metal doors to limit access.",
+    "workbench": "Utility Bench I "
   },
   {
     "id": "dried-out-arc-resin",
@@ -1383,7 +1657,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Obtained from ARC enemies or Activities. Can be recycled into plastic.",
+    "workbench": ""
   },
   {
     "id": "duct-tape-recipe",
@@ -1393,7 +1669,9 @@ export const ITEMS: Item[] = [
     "sellValue": 300,
     "recycleValue": 120,
     "decision": "keep",
-    "reason": "ARC material - needed for upgrades"
+    "reason": "ARC material - needed for upgrades",
+    "description": "Used to craft a wide range of items. Can be recycled into crafting materials",
+    "workbench": ""
   },
   {
     "id": "durable-cloth",
@@ -1403,7 +1681,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "keep",
-    "reason": "Crafting material - needed for upgrades"
+    "reason": "Crafting material - needed for upgrades",
+    "description": "Used to craft medical Supplies such as Herbal Bandage and Sterilized Bandage.",
+    "workbench": "Refiner"
   },
   {
     "id": "electrical-components",
@@ -1413,7 +1693,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "keep",
-    "reason": "Crafting material - needed for upgrades"
+    "reason": "Crafting material - needed for upgrades",
+    "description": "Used to craft a wide range of items. Can be recycled into crafting materials.",
+    "workbench": "Refiner"
   },
   {
     "id": "empty-wine-bottle",
@@ -1423,7 +1705,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "sell",
-    "reason": "Trinket - vendor for 1,000cr"
+    "reason": "Trinket - vendor for 1,000cr",
+    "description": "Yes, it really is empty.",
+    "workbench": ""
   },
   {
     "id": "energy-ammo",
@@ -1433,7 +1717,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "keep",
-    "reason": "Ammo used for energy weapons. One clip will fully charge a single weapon."
+    "reason": "Ammo used for energy weapons. One clip will fully charge a single weapon.",
+    "description": "Ammo used for energy weapons. One clip will fully charge a single weapon.",
+    "workbench": ""
   },
   {
     "id": "equalizer-i",
@@ -1443,7 +1729,9 @@ export const ITEMS: Item[] = [
     "sellValue": 34000,
     "recycleValue": 13600,
     "decision": "keep",
-    "reason": "Weapon worth 34,000cr"
+    "reason": "Weapon worth 34,000cr",
+    "description": "A high capacity experimental beam rifle.",
+    "workbench": "Weapon Bench 3"
   },
   {
     "id": "equalizer-recipe",
@@ -1453,7 +1741,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "A high capacity experimental beam rifle.",
+    "workbench": ""
   },
   {
     "id": "esr-analyzer",
@@ -1463,7 +1753,9 @@ export const ITEMS: Item[] = [
     "sellValue": 0,
     "recycleValue": 0,
     "decision": "keep",
-    "reason": "Cosmetic or special item"
+    "reason": "Cosmetic or special item",
+    "description": "A portable analyzer from the world before, complete with several spare tubes.",
+    "workbench": ""
   },
   {
     "id": "exodus-modules",
@@ -1473,7 +1765,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2750,
     "recycleValue": 1100,
     "decision": "keep",
-    "reason": "ARC material - needed for upgrades"
+    "reason": "ARC material - needed for upgrades",
+    "description": "Used to craft a wide range of items.",
+    "workbench": ""
   },
   {
     "id": "expired-pasta",
@@ -1483,7 +1777,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "sell",
-    "reason": "Trinket - vendor for 1,000cr"
+    "reason": "Trinket - vendor for 1,000cr",
+    "description": "Way pasta its prime.",
+    "workbench": ""
   },
   {
     "id": "expired-respirator",
@@ -1493,7 +1789,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "The filters are clogged with sand and noxious fumes. Long past its lifespan.",
+    "workbench": ""
   },
   {
     "id": "explosive-compound",
@@ -1503,7 +1801,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "keep",
-    "reason": "Crafting material - needed for upgrades"
+    "reason": "Crafting material - needed for upgrades",
+    "description": "Used to craft explosives.",
+    "workbench": "Refiner"
   },
   {
     "id": "explosive-mine",
@@ -1513,7 +1813,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1500,
     "recycleValue": 600,
     "decision": "keep",
-    "reason": "Consumable - use in raids"
+    "reason": "Consumable - use in raids",
+    "description": "A proximity triggered mine that pops up and explodes, dealing damage to anything within its radius.",
+    "workbench": "Explosives Bench 3"
   },
   {
     "id": "explosive-mine-blueprint",
@@ -1523,7 +1825,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft an Explosive Mine",
+    "workbench": ""
   },
   {
     "id": "extended-barrel",
@@ -1533,7 +1837,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Weapon mod - improves your guns"
+    "reason": "Weapon mod - improves your guns",
+    "description": "Moderately increases bullet velocity.",
+    "workbench": ""
   },
   {
     "id": "extended-barrel-recipe",
@@ -1543,7 +1849,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft an Extended Barrel",
+    "workbench": ""
   },
   {
     "id": "extended-light-mag-i",
@@ -1553,7 +1861,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "keep",
-    "reason": "Weapon mod - improves your guns"
+    "reason": "Weapon mod - improves your guns",
+    "description": "Slightly extends the ammo capacity of the compatible weapons that use light ammo.",
+    "workbench": "Gunsmith"
   },
   {
     "id": "extended-light-mag-ii",
@@ -1563,7 +1873,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "keep",
-    "reason": "Weapon mod - improves your guns"
+    "reason": "Weapon mod - improves your guns",
+    "description": "Moderately extends the ammo capacity of the compatible weapons that use light ammo.",
+    "workbench": "Weapon Bench II"
   },
   {
     "id": "extended-light-mag-ii-recipe",
@@ -1573,7 +1885,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Extended Light Mag II",
+    "workbench": ""
   },
   {
     "id": "extended-light-mag-iii",
@@ -1583,7 +1897,9 @@ export const ITEMS: Item[] = [
     "sellValue": 0,
     "recycleValue": 0,
     "decision": "keep",
-    "reason": "Weapon mod - improves your guns"
+    "reason": "Weapon mod - improves your guns",
+    "description": "Significantly extends the ammo capacity of the compatible weapons that use light ammo.",
+    "workbench": "Weapon Bench III"
   },
   {
     "id": "extended-light-mag-iii-recipe",
@@ -1593,7 +1909,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Extended Light Mag III",
+    "workbench": ""
   },
   {
     "id": "extended-medium-mag-i",
@@ -1603,7 +1921,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "keep",
-    "reason": "Weapon mod - improves your guns"
+    "reason": "Weapon mod - improves your guns",
+    "description": "Slightly extends the ammo capacity of compatible weapons that use medium ammo.",
+    "workbench": "Weapon Bench I"
   },
   {
     "id": "extended-medium-mag-ii",
@@ -1613,7 +1933,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "keep",
-    "reason": "Weapon mod - improves your guns"
+    "reason": "Weapon mod - improves your guns",
+    "description": "Moderately extends the ammo capacity of compatible weapons that use medium ammo",
+    "workbench": ""
   },
   {
     "id": "extended-medium-mag-ii-recipe",
@@ -1623,7 +1945,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Extended Medium Mag II",
+    "workbench": ""
   },
   {
     "id": "extended-medium-mag-iii",
@@ -1633,7 +1957,9 @@ export const ITEMS: Item[] = [
     "sellValue": 0,
     "recycleValue": 0,
     "decision": "keep",
-    "reason": "Weapon mod - improves your guns"
+    "reason": "Weapon mod - improves your guns",
+    "description": "Significantly extends the ammo capacity of compatible weapons that use medium ammo.",
+    "workbench": ""
   },
   {
     "id": "extended-medium-mag-iii-blueprint",
@@ -1643,7 +1969,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft the Medium Mag III",
+    "workbench": ""
   },
   {
     "id": "extended-shotgun-mag-i",
@@ -1653,7 +1981,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "keep",
-    "reason": "Weapon mod - improves your guns"
+    "reason": "Weapon mod - improves your guns",
+    "description": "Slightly extends the ammo capacity of compatible weapons that use shotgun ammo.",
+    "workbench": "Gunsmith"
   },
   {
     "id": "extended-shotgun-mag-ii",
@@ -1663,7 +1993,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "keep",
-    "reason": "Weapon mod - improves your guns"
+    "reason": "Weapon mod - improves your guns",
+    "description": "Moderately extends the ammo capacity of compatible weapons that use shotgun ammo.",
+    "workbench": "Gunsmith II"
   },
   {
     "id": "extended-shotgun-mag-ii-recipe",
@@ -1673,7 +2005,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Extended Shotgun Mag II - Moderately extends the ammo capacity of shotguns.",
+    "workbench": "Weapon Bench"
   },
   {
     "id": "extended-shotgun-mag-iii",
@@ -1683,7 +2017,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Weapon mod - improves your guns"
+    "reason": "Weapon mod - improves your guns",
+    "description": "Significantly extends the ammo capacity of shotguns.",
+    "workbench": ""
   },
   {
     "id": "extended-shotgun-mag-iii-recipe",
@@ -1693,7 +2029,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Extended Shotgun Mag III",
+    "workbench": ""
   },
   {
     "id": "fabric",
@@ -1703,7 +2041,9 @@ export const ITEMS: Item[] = [
     "sellValue": 50,
     "recycleValue": 20,
     "decision": "keep",
-    "reason": "Used to craft medical supplies and shields."
+    "reason": "Used to craft medical supplies and shields.",
+    "description": "Used to craft medical supplies and shields.",
+    "workbench": ""
   },
   {
     "id": "faded-photograph",
@@ -1713,7 +2053,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "sell",
-    "reason": "Trinket - vendor for 640cr"
+    "reason": "Trinket - vendor for 640cr",
+    "description": "A snapshot of the world before, faded by sunlight and time.",
+    "workbench": ""
   },
   {
     "id": "ferro-i",
@@ -1723,7 +2065,9 @@ export const ITEMS: Item[] = [
     "sellValue": 475,
     "recycleValue": 190,
     "decision": "keep",
-    "reason": "Weapon worth 475cr"
+    "reason": "Weapon worth 475cr",
+    "description": "Heavy break-action rifle. Packs a punch, but must be reloaded between every shot.",
+    "workbench": "Weapon Bench"
   },
   {
     "id": "ferro-ii",
@@ -1733,7 +2077,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "keep",
-    "reason": "Weapon worth 1,000cr"
+    "reason": "Weapon worth 1,000cr",
+    "description": "Heavy break-action rifle. Packs a punch, but must be reloaded between every shot.",
+    "workbench": "Weapon Bench"
   },
   {
     "id": "ferro-iii",
@@ -1743,7 +2089,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "keep",
-    "reason": "Weapon worth 2,000cr"
+    "reason": "Weapon worth 2,000cr",
+    "description": "Heavy break-action rifle. Packs a punch, but must be reloaded between every shot.",
+    "workbench": "Weapon Bench I"
   },
   {
     "id": "ferro-iv",
@@ -1753,7 +2101,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2900,
     "recycleValue": 1160,
     "decision": "keep",
-    "reason": "Weapon worth 2,900cr"
+    "reason": "Weapon worth 2,900cr",
+    "description": "Heavy break-action rifle. Packs a punch, but must be reloaded between every shot.",
+    "workbench": "Weapon Bench"
   },
   {
     "id": "fertilizer",
@@ -1763,7 +2113,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "keep",
-    "reason": "Valuable natural resource"
+    "reason": "Valuable natural resource",
+    "description": "May be worth a few coins.",
+    "workbench": ""
   },
   {
     "id": "film-reel",
@@ -1773,7 +2125,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "sell",
-    "reason": "Trinket - vendor for 2,000cr"
+    "reason": "Trinket - vendor for 2,000cr",
+    "description": "May be worth a few coins.",
+    "workbench": ""
   },
   {
     "id": "fine-wristwatch",
@@ -1783,7 +2137,9 @@ export const ITEMS: Item[] = [
     "sellValue": 3000,
     "recycleValue": 1200,
     "decision": "sell",
-    "reason": "Trinket - vendor for 3,000cr"
+    "reason": "Trinket - vendor for 3,000cr",
+    "description": "Perfect for telling the time, and showcasing that you're an exceedingly dignified person.",
+    "workbench": ""
   },
   {
     "id": "fireball-burner",
@@ -1793,7 +2149,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into ARC Alloy.",
+    "workbench": ""
   },
   {
     "id": "firecracker",
@@ -1803,7 +2161,9 @@ export const ITEMS: Item[] = [
     "sellValue": 270,
     "recycleValue": 108,
     "decision": "keep",
-    "reason": "Consumable - use in raids"
+    "reason": "Consumable - use in raids",
+    "description": "A device that sparks and pops in a pleasant manner.",
+    "workbench": ""
   },
   {
     "id": "fireworks-box",
@@ -1813,7 +2173,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "keep",
-    "reason": "Consumable - use in raids"
+    "reason": "Consumable - use in raids",
+    "description": "A remotely triggered arrangement of dazzling fireworks, sure to put on a show",
+    "workbench": ""
   },
   {
     "id": "fireworks-box-blueprint",
@@ -1823,7 +2185,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Fireworks Box",
+    "workbench": ""
   },
   {
     "id": "flame-spray",
@@ -1833,7 +2197,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "keep",
-    "reason": "Consumable - use in raids"
+    "reason": "Consumable - use in raids",
+    "description": "A classic makeshift weapon, sure to leave scorch marks.",
+    "workbench": ""
   },
   {
     "id": "flow-controller",
@@ -1843,7 +2209,9 @@ export const ITEMS: Item[] = [
     "sellValue": 3000,
     "recycleValue": 1200,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials",
+    "workbench": ""
   },
   {
     "id": "flushing-terminal-key",
@@ -1853,7 +2221,9 @@ export const ITEMS: Item[] = [
     "sellValue": 0,
     "recycleValue": 0,
     "decision": "sell",
-    "reason": "Trinket - vendor for 0cr"
+    "reason": "Trinket - vendor for 0cr",
+    "description": "A pungent key used to operate the Flushing Terminals in the tunnels below Spaceport",
+    "workbench": ""
   },
   {
     "id": "fossilized-lightning",
@@ -1863,7 +2233,9 @@ export const ITEMS: Item[] = [
     "sellValue": 4000,
     "recycleValue": 1600,
     "decision": "keep",
-    "reason": "Valuable natural resource"
+    "reason": "Valuable natural resource",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "free-loadout-augment",
@@ -1873,7 +2245,9 @@ export const ITEMS: Item[] = [
     "sellValue": 100,
     "recycleValue": 40,
     "decision": "keep",
-    "reason": "Basic augment for rookie Raiders, offering slightly more backpack space and carry capacity."
+    "reason": "Basic augment for rookie Raiders, offering slightly more backpack space and carry capacity.",
+    "description": "Basic augment for rookie Raiders, offering slightly more backpack space and carry capacity.",
+    "workbench": ""
   },
   {
     "id": "frequency-modulation-box",
@@ -1883,7 +2257,9 @@ export const ITEMS: Item[] = [
     "sellValue": 3000,
     "recycleValue": 1200,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials",
+    "workbench": ""
   },
   {
     "id": "fried-motherboard",
@@ -1893,7 +2269,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "fruit-mix",
@@ -1903,7 +2281,9 @@ export const ITEMS: Item[] = [
     "sellValue": 0,
     "recycleValue": 0,
     "decision": "keep",
-    "reason": "Cosmetic or special item"
+    "reason": "Cosmetic or special item",
+    "description": "A food item that moderately increases both health and stamina.",
+    "workbench": ""
   },
   {
     "id": "frying-pan",
@@ -1913,7 +2293,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "garlic-press",
@@ -1923,7 +2305,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "It'll press garlic, olives, and probably many other things.",
+    "workbench": ""
   },
   {
     "id": "gas-grenade",
@@ -1933,7 +2317,9 @@ export const ITEMS: Item[] = [
     "sellValue": 270,
     "recycleValue": 108,
     "decision": "keep",
-    "reason": "Consumable - use in raids"
+    "reason": "Consumable - use in raids",
+    "description": "A grenade that emites lingering toxic cloud on impact, draining the stamina of any Raiders within its area of effect.",
+    "workbench": "Explosive Bench 1"
   },
   {
     "id": "gas-grenade-trap",
@@ -1943,7 +2329,9 @@ export const ITEMS: Item[] = [
     "sellValue": 300,
     "recycleValue": 120,
     "decision": "keep",
-    "reason": "Consumable - use in raids"
+    "reason": "Consumable - use in raids",
+    "description": "A laser trip wire that detonates a Gas Grenade",
+    "workbench": ""
   },
   {
     "id": "gas-mine",
@@ -1953,7 +2341,9 @@ export const ITEMS: Item[] = [
     "sellValue": 270,
     "recycleValue": 108,
     "decision": "keep",
-    "reason": "Consumable - use in raids"
+    "reason": "Consumable - use in raids",
+    "description": "A proximity-triggered mine that pops up and deploys a gas cloud that rapidly drains stamina",
+    "workbench": "Explosives Bench I"
   },
   {
     "id": "gas-mine-blueprint",
@@ -1963,7 +2353,9 @@ export const ITEMS: Item[] = [
     "sellValue": 0,
     "recycleValue": 0,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Gas Mine",
+    "workbench": ""
   },
   {
     "id": "geiger-counter",
@@ -1973,7 +2365,9 @@ export const ITEMS: Item[] = [
     "sellValue": 3500,
     "recycleValue": 1400,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "great-muullein",
@@ -1983,7 +2377,9 @@ export const ITEMS: Item[] = [
     "sellValue": 300,
     "recycleValue": 120,
     "decision": "sell",
-    "reason": "Nature item - sell for 300cr"
+    "reason": "Nature item - sell for 300cr",
+    "description": "Used to craft medical supplies.",
+    "workbench": ""
   },
   {
     "id": "green-light-stick",
@@ -1993,7 +2389,9 @@ export const ITEMS: Item[] = [
     "sellValue": 150,
     "recycleValue": 60,
     "decision": "keep",
-    "reason": "Consumable - use in raids"
+    "reason": "Consumable - use in raids",
+    "description": "A throwable chemical light that illuminates the area around it.",
+    "workbench": ""
   },
   {
     "id": "green-light-stick-blueprint",
@@ -2003,7 +2401,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Green Light Stick.",
+    "workbench": ""
   },
   {
     "id": "hairpin-i",
@@ -2013,7 +2413,9 @@ export const ITEMS: Item[] = [
     "sellValue": 450,
     "recycleValue": 180,
     "decision": "keep",
-    "reason": "Weapon worth 450cr"
+    "reason": "Weapon worth 450cr",
+    "description": "Single-action pistol with a built-in silencer. Great for stealth, but tricky in combat.",
+    "workbench": "Weapon Bench 1 or Basic Bench"
   },
   {
     "id": "hairpin-ii",
@@ -2023,7 +2425,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "keep",
-    "reason": "Weapon worth 1,000cr"
+    "reason": "Weapon worth 1,000cr",
+    "description": "Single-action pistol with a built-in silencer. Great for stealth, but tricky in combat.",
+    "workbench": "Weapon Bench"
   },
   {
     "id": "hairpin-iii",
@@ -2033,7 +2437,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "keep",
-    "reason": "Weapon worth 2,000cr"
+    "reason": "Weapon worth 2,000cr",
+    "description": "Single-action pistol with a built-in silencer. Great for stealth, but tricky in combat.",
+    "workbench": "Weapon Bench"
   },
   {
     "id": "hairpin-iv",
@@ -2043,7 +2449,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2900,
     "recycleValue": 1160,
     "decision": "keep",
-    "reason": "Weapon worth 2,900cr"
+    "reason": "Weapon worth 2,900cr",
+    "description": "Single-action pistol with a built-in silencer. Great for stealth, but tricky in combat.",
+    "workbench": "Weapon Bench"
   },
   {
     "id": "headphones",
@@ -2053,7 +2461,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "heavy-ammo",
@@ -2063,7 +2473,9 @@ export const ITEMS: Item[] = [
     "sellValue": 12,
     "recycleValue": 4,
     "decision": "keep",
-    "reason": "Heavy bullets used mainly with large-caliber weapons."
+    "reason": "Heavy bullets used mainly with large-caliber weapons.",
+    "description": "Heavy bullets used mainly with large-caliber weapons.",
+    "workbench": "Workbench"
   },
   {
     "id": "heavy-fuze-grenade",
@@ -2073,7 +2485,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1600,
     "recycleValue": 640,
     "decision": "keep",
-    "reason": "Consumable - use in raids"
+    "reason": "Consumable - use in raids",
+    "description": "A grenade that detonates after a delay, dealing explosive damage in its radius.",
+    "workbench": "Explosives Bench"
   },
   {
     "id": "heavy-gun-parts",
@@ -2083,7 +2497,9 @@ export const ITEMS: Item[] = [
     "sellValue": 700,
     "recycleValue": 280,
     "decision": "keep",
-    "reason": "ARC material - needed for upgrades"
+    "reason": "ARC material - needed for upgrades",
+    "description": "Used directly in crafting items of all tiers.",
+    "workbench": ""
   },
   {
     "id": "heavy-gun-parts-recipe",
@@ -2093,7 +2509,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Used directly in crafting items of all tiers.",
+    "workbench": "Refiner II"
   },
   {
     "id": "heavy-shield",
@@ -2103,7 +2521,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5500,
     "recycleValue": 2200,
     "decision": "sell",
-    "reason": "High value - sell for 5,500cr"
+    "reason": "High value - sell for 5,500cr",
+    "description": "A heavy shield that blocks a large portion of incoming damage, but carries a significant cost to mobility.",
+    "workbench": "Gear Bench 3"
   },
   {
     "id": "herbal-bandage",
@@ -2113,7 +2533,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "keep",
-    "reason": "Consumable - use in raids"
+    "reason": "Consumable - use in raids",
+    "description": "An improvised medical item that gradually restores health over time.",
+    "workbench": "Med Station"
   },
   {
     "id": "horizontal-grip",
@@ -2123,7 +2545,9 @@ export const ITEMS: Item[] = [
     "sellValue": 7000,
     "recycleValue": 2800,
     "decision": "keep",
-    "reason": "Weapon mod - improves your guns"
+    "reason": "Weapon mod - improves your guns",
+    "description": "Moderately reduces both vertical and horizontal recoil.",
+    "workbench": ""
   },
   {
     "id": "horizontal-grip-blueprint",
@@ -2133,7 +2557,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Allows you to craft the Horizontal Grip.",
+    "workbench": ""
   },
   {
     "id": "hornet-driver",
@@ -2143,7 +2569,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "A control module used to operate Hornet drones or vehicles.",
+    "workbench": ""
   },
   {
     "id": "household-cleaner",
@@ -2153,7 +2581,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into chemicals.",
+    "workbench": ""
   },
   {
     "id": "hullcracker-blueprint",
@@ -2163,7 +2593,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft an Hullcracker",
+    "workbench": ""
   },
   {
     "id": "hullcracker-i",
@@ -2173,7 +2605,9 @@ export const ITEMS: Item[] = [
     "sellValue": 10000,
     "recycleValue": 4000,
     "decision": "keep",
-    "reason": "Weapon worth 10,000cr"
+    "reason": "Weapon worth 10,000cr",
+    "description": "Fires explosive projectiles that only detonate when hitting ARC.",
+    "workbench": "Weapon Bench"
   },
   {
     "id": "hullcracker-ii",
@@ -2183,7 +2617,9 @@ export const ITEMS: Item[] = [
     "sellValue": 13000,
     "recycleValue": 5200,
     "decision": "keep",
-    "reason": "Weapon worth 13,000cr"
+    "reason": "Weapon worth 13,000cr",
+    "description": "Fires explosive projectiles that only detonate when hitting ARC",
+    "workbench": "Gunsmith III"
   },
   {
     "id": "hullcracker-iii",
@@ -2193,7 +2629,9 @@ export const ITEMS: Item[] = [
     "sellValue": 17000,
     "recycleValue": 6800,
     "decision": "keep",
-    "reason": "Weapon worth 17,000cr"
+    "reason": "Weapon worth 17,000cr",
+    "description": "Fires explosive projectiles that only detonate when hitting ARC",
+    "workbench": "Gunsmith III"
   },
   {
     "id": "hullcracker-iv",
@@ -2203,7 +2641,9 @@ export const ITEMS: Item[] = [
     "sellValue": 22000,
     "recycleValue": 8800,
     "decision": "keep",
-    "reason": "Weapon worth 22,000cr"
+    "reason": "Weapon worth 22,000cr",
+    "description": "Fires explosive projectiles that only detonate when hitting ARC",
+    "workbench": "Gunsmith III"
   },
   {
     "id": "humidifier",
@@ -2213,7 +2653,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "ice-cream-scooper",
@@ -2223,7 +2665,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "It is theorized that scooping things was a favorite pastime in the world before.",
+    "workbench": ""
   },
   {
     "id": "il-toro-recipe",
@@ -2233,7 +2677,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft an Il Toro",
+    "workbench": ""
   },
   {
     "id": "il-toro-i",
@@ -2243,7 +2689,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Weapon worth 5,000cr"
+    "reason": "Weapon worth 5,000cr",
+    "description": "Pump-action shotgun with large bullet spread, sharp falloff, and high damage output.",
+    "workbench": "Weapon Bench 1"
   },
   {
     "id": "il-toro-ii",
@@ -2253,7 +2701,9 @@ export const ITEMS: Item[] = [
     "sellValue": 7000,
     "recycleValue": 2800,
     "decision": "keep",
-    "reason": "Weapon worth 7,000cr"
+    "reason": "Weapon worth 7,000cr",
+    "description": "Pump-action shotgun with large bullet spread, sharp falloff, and high damage output.",
+    "workbench": ""
   },
   {
     "id": "il-toro-iiii",
@@ -2263,7 +2713,9 @@ export const ITEMS: Item[] = [
     "sellValue": 10000,
     "recycleValue": 4000,
     "decision": "keep",
-    "reason": "Weapon worth 10,000cr"
+    "reason": "Weapon worth 10,000cr",
+    "description": "Pump-action shotgun with large bullet spread, sharp falloff, and high damage output.",
+    "workbench": "Weapon Bench"
   },
   {
     "id": "il-toro-iv",
@@ -2273,7 +2725,9 @@ export const ITEMS: Item[] = [
     "sellValue": 13000,
     "recycleValue": 5200,
     "decision": "keep",
-    "reason": "Weapon worth 13,000cr"
+    "reason": "Weapon worth 13,000cr",
+    "description": "Pump-action shotgun with large bullet spread, sharp falloff, and high damage output.",
+    "workbench": "Weapon Bench"
   },
   {
     "id": "impure-arc-coolant",
@@ -2283,7 +2737,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Obtained from ARC enemies or activities. Can be recycled into chemicals.",
+    "workbench": ""
   },
   {
     "id": "industrial-battery",
@@ -2293,7 +2749,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "industrial-charger",
@@ -2303,7 +2761,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "industrial-magnet",
@@ -2313,7 +2773,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "ion-sputter",
@@ -2323,7 +2785,9 @@ export const ITEMS: Item[] = [
     "sellValue": 6000,
     "recycleValue": 2400,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into Crafting Materials ",
+    "workbench": ""
   },
   {
     "id": "jolt-mine",
@@ -2333,7 +2797,9 @@ export const ITEMS: Item[] = [
     "sellValue": 850,
     "recycleValue": 340,
     "decision": "keep",
-    "reason": "Consumable - use in raids"
+    "reason": "Consumable - use in raids",
+    "description": "A proximity triggered mine that pops up and stuns anything within its radius.",
+    "workbench": "Explosives Bench II"
   },
   {
     "id": "jolt-mine-recipe",
@@ -2343,7 +2809,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Jolt Mine",
+    "workbench": ""
   },
   {
     "id": "junior-outfit",
@@ -2353,7 +2821,9 @@ export const ITEMS: Item[] = [
     "sellValue": 0,
     "recycleValue": 0,
     "decision": "keep",
-    "reason": "Cosmetic or special item"
+    "reason": "Cosmetic or special item",
+    "description": "This is the Junior cosmetic outfit",
+    "workbench": ""
   },
   {
     "id": "jupiter-i",
@@ -2363,7 +2833,9 @@ export const ITEMS: Item[] = [
     "sellValue": 34000,
     "recycleValue": 13600,
     "decision": "keep",
-    "reason": "Weapon worth 34,000cr"
+    "reason": "Weapon worth 34,000cr",
+    "description": "A bolt-action sniper rifle with exceptional damage output and accuracy, but slow handling.",
+    "workbench": "Weapon Bench 3"
   },
   {
     "id": "jupiter-i-recipe",
@@ -2373,7 +2845,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Fires projectiles at an incredible velocity, capable of damaging multiple targets with one shot.",
+    "workbench": "Gunsmith III"
   },
   {
     "id": "kettle-i",
@@ -2383,7 +2857,9 @@ export const ITEMS: Item[] = [
     "sellValue": 840,
     "recycleValue": 336,
     "decision": "keep",
-    "reason": "Weapon worth 840cr"
+    "reason": "Weapon worth 840cr",
+    "description": "Semi-automatic assault rifle. Quick and accurate, but has low bullet velocity and takes a long time reload.",
+    "workbench": "Weapon Bench"
   },
   {
     "id": "kettle-ii",
@@ -2393,7 +2869,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "keep",
-    "reason": "Weapon worth 2,000cr"
+    "reason": "Weapon worth 2,000cr",
+    "description": "Semi-automatic assault rifle. Quick and accurate, but has low bullet velocity and takes a long time reload.",
+    "workbench": "Gunsmith I"
   },
   {
     "id": "kettle-iii",
@@ -2403,7 +2881,9 @@ export const ITEMS: Item[] = [
     "sellValue": 3000,
     "recycleValue": 1200,
     "decision": "keep",
-    "reason": "Weapon worth 3,000cr"
+    "reason": "Weapon worth 3,000cr",
+    "description": "Semi-automatic assault rifle. Quick and accurate, but has low bullet velocity and takes a long time reload.",
+    "workbench": ""
   },
   {
     "id": "kettle-iv",
@@ -2413,7 +2893,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Weapon worth 5,000cr"
+    "reason": "Weapon worth 5,000cr",
+    "description": "Semi-automatic assault rifle. Quick and accurate, but has low bullet velocity and takes a long time reload.",
+    "workbench": "Gunsmith I"
   },
   {
     "id": "kinetic-converter",
@@ -2423,7 +2905,9 @@ export const ITEMS: Item[] = [
     "sellValue": 7000,
     "recycleValue": 2800,
     "decision": "keep",
-    "reason": "Weapon mod - improves your guns"
+    "reason": "Weapon mod - improves your guns",
+    "description": "Moderately increases fire rate.",
+    "workbench": ""
   },
   {
     "id": "kinetic-converter-recipe",
@@ -2433,7 +2917,9 @@ export const ITEMS: Item[] = [
     "sellValue": 0,
     "recycleValue": 0,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Kinetic Converter",
+    "workbench": ""
   },
   {
     "id": "laboratory-reagents",
@@ -2443,7 +2929,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "lances-mixtape-5th-edition",
@@ -2453,7 +2941,9 @@ export const ITEMS: Item[] = [
     "sellValue": 10000,
     "recycleValue": 4000,
     "decision": "sell",
-    "reason": "Trinket - vendor for 10,000cr"
+    "reason": "Trinket - vendor for 10,000cr",
+    "description": "Lance has personally planted a number of these around the Rust Belt, for some reason.",
+    "workbench": ""
   },
   {
     "id": "laser-trap-lure-recipe",
@@ -2463,7 +2953,9 @@ export const ITEMS: Item[] = [
     "sellValue": 0,
     "recycleValue": 0,
     "decision": "keep",
-    "reason": "Consumable - use in raids"
+    "reason": "Consumable - use in raids",
+    "description": "A deployable laser trip wire that detonates a Lure Grenade.",
+    "workbench": ""
   },
   {
     "id": "launcher-ammo",
@@ -2473,7 +2965,9 @@ export const ITEMS: Item[] = [
     "sellValue": 250,
     "recycleValue": 100,
     "decision": "keep",
-    "reason": "Anti-ARC payloads used mainly by the Hullcracker"
+    "reason": "Anti-ARC payloads used mainly by the Hullcracker",
+    "description": "Anti-ARC payloads used mainly by the Hullcracker",
+    "workbench": "Workbench"
   },
   {
     "id": "leaper-pulse-unit",
@@ -2483,7 +2977,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Throwable - useful in combat"
+    "reason": "Throwable - useful in combat",
+    "description": "Can be thrown to create a violent singularity",
+    "workbench": ""
   },
   {
     "id": "lemon",
@@ -2493,7 +2989,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "sell",
-    "reason": "Nature item - sell for 640cr"
+    "reason": "Nature item - sell for 640cr",
+    "description": "Can be consumed for a small amount of stamina",
+    "workbench": ""
   },
   {
     "id": "lidar-scanner",
@@ -2503,7 +3001,9 @@ export const ITEMS: Item[] = [
     "sellValue": 0,
     "recycleValue": 0,
     "decision": "sell",
-    "reason": "Trinket - vendor for 0cr"
+    "reason": "Trinket - vendor for 0cr",
+    "description": "A laser-based scanner used to detect the subtlest changer to the Earth's surface.",
+    "workbench": ""
   },
   {
     "id": "light-ammo",
@@ -2513,7 +3013,9 @@ export const ITEMS: Item[] = [
     "sellValue": 4,
     "recycleValue": 1,
     "decision": "keep",
-    "reason": "Light bullets used mainly with SMGs and light handguns. Such as Kettle, Stitcher, Burletta, Hairpin and Bobcat."
+    "reason": "Light bullets used mainly with SMGs and light handguns. Such as Kettle, Stitcher, Burletta, Hairpin and Bobcat.",
+    "description": "Light bullets used mainly with SMGs and light handguns. Such as Kettle, Stitcher, Burletta, Hairpin and Bobcat.",
+    "workbench": "Workbench"
   },
   {
     "id": "light-bulb",
@@ -2523,7 +3025,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "sell",
-    "reason": "Trinket - vendor for 2,000cr"
+    "reason": "Trinket - vendor for 2,000cr",
+    "description": "Without light, life underground would be impossible.",
+    "workbench": ""
   },
   {
     "id": "light-gun-parts",
@@ -2533,7 +3037,9 @@ export const ITEMS: Item[] = [
     "sellValue": 700,
     "recycleValue": 280,
     "decision": "keep",
-    "reason": "ARC material - needed for upgrades"
+    "reason": "ARC material - needed for upgrades",
+    "description": "Assorted spare parts used for pistols and SMGs.",
+    "workbench": ""
   },
   {
     "id": "light-gun-parts-recipe",
@@ -2543,7 +3049,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft Light Gun Parts",
+    "workbench": "Refiner"
   },
   {
     "id": "light-impact-grenade",
@@ -2553,7 +3061,9 @@ export const ITEMS: Item[] = [
     "sellValue": 270,
     "recycleValue": 108,
     "decision": "keep",
-    "reason": "Consumable - use in raids"
+    "reason": "Consumable - use in raids",
+    "description": "A grenade that detonates on impact, dealing explosive damage in a small radius.",
+    "workbench": "Explosive Bench 1 or Basic Bench"
   },
   {
     "id": "light-shield",
@@ -2563,7 +3073,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "keep",
-    "reason": "A lightweight shield that offers limited protection without severely impacting mobility."
+    "reason": "A lightweight shield that offers limited protection without severely impacting mobility.",
+    "description": "A lightweight shield that offers limited protection without severely impacting mobility.",
+    "workbench": "Equipment Bench 1"
   },
   {
     "id": "lightweight-stock",
@@ -2573,7 +3085,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Weapon mod - improves your guns"
+    "reason": "Weapon mod - improves your guns",
+    "description": "Moderately improves ADS & draw speed.",
+    "workbench": ""
   },
   {
     "id": "lightweight-stock-recipe",
@@ -2583,7 +3097,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Lightweight Stock",
+    "workbench": ""
   },
   {
     "id": "lil-smoke-grenade",
@@ -2593,7 +3109,9 @@ export const ITEMS: Item[] = [
     "sellValue": 300,
     "recycleValue": 120,
     "decision": "keep",
-    "reason": "Consumable - use in raids"
+    "reason": "Consumable - use in raids",
+    "description": "A grenade that pops a thick but small smoke cloud on impact, blocking visibility from ARC and other Raiders.",
+    "workbench": "Utility Bench"
   },
   {
     "id": "looting-mk-1",
@@ -2603,7 +3121,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "keep",
-    "reason": "Basic looting augment. More backpack slots and weight capacity, but low defensive and tactical capability."
+    "reason": "Basic looting augment. More backpack slots and weight capacity, but low defensive and tactical capability.",
+    "description": "Basic looting augment. More backpack slots and weight capacity, but low defensive and tactical capability.",
+    "workbench": ""
   },
   {
     "id": "looting-mk-2",
@@ -2613,7 +3133,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "keep",
-    "reason": "Significantly increases looting potential; adds slots for trinkets."
+    "reason": "Significantly increases looting potential; adds slots for trinkets.",
+    "description": "Significantly increases looting potential; adds slots for trinkets.",
+    "workbench": "Equipment Bench"
   },
   {
     "id": "looting-mk-3-cautious",
@@ -2623,7 +3145,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "sell",
-    "reason": "High value - sell for 5,000cr"
+    "reason": "High value - sell for 5,000cr",
+    "description": "A looting augment that swaps some carry capacity to increase survivability.",
+    "workbench": "Equipment Bench"
   },
   {
     "id": "looting-mk-3-survivor",
@@ -2633,7 +3157,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "sell",
-    "reason": "High value - sell for 5,000cr"
+    "reason": "High value - sell for 5,000cr",
+    "description": "A heavy-duty pack mule augment. Large weight capacity and large backpack space.",
+    "workbench": ""
   },
   {
     "id": "looting-mk-3-survivor-blueprint",
@@ -2643,7 +3169,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "A heavy-duty pack mule augment. Large weight capacity and large backpack space.",
+    "workbench": ""
   },
   {
     "id": "lure-grenade",
@@ -2653,7 +3181,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "keep",
-    "reason": "Consumable - use in raids"
+    "reason": "Consumable - use in raids",
+    "description": "A noisy device that sticks to surfaces, distracting nearby ARC machines and drawing their fire.",
+    "workbench": "Utility Bench 2"
   },
   {
     "id": "lure-grenade-recipe",
@@ -2663,7 +3193,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Lure Grenade",
+    "workbench": "Utility Bench"
   },
   {
     "id": "lure-grenade-trap",
@@ -2673,7 +3205,9 @@ export const ITEMS: Item[] = [
     "sellValue": 0,
     "recycleValue": 0,
     "decision": "keep",
-    "reason": "Consumable - use in raids"
+    "reason": "Consumable - use in raids",
+    "description": "A laser trip wire that detonates a Lure Grenade.",
+    "workbench": ""
   },
   {
     "id": "magnet",
@@ -2683,7 +3217,9 @@ export const ITEMS: Item[] = [
     "sellValue": 300,
     "recycleValue": 120,
     "decision": "keep",
-    "reason": "ARC material - needed for upgrades"
+    "reason": "ARC material - needed for upgrades",
+    "description": "Fun thing to put on a fridgerator.",
+    "workbench": ""
   },
   {
     "id": "magnetic-accelerator",
@@ -2693,7 +3229,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5500,
     "recycleValue": 2200,
     "decision": "keep",
-    "reason": "Crafting material - needed for upgrades"
+    "reason": "Crafting material - needed for upgrades",
+    "description": "Used to craft advanced weapons.",
+    "workbench": "Refiner"
   },
   {
     "id": "magnetron",
@@ -2703,7 +3241,9 @@ export const ITEMS: Item[] = [
     "sellValue": 6000,
     "recycleValue": 2400,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials",
+    "workbench": ""
   },
   {
     "id": "matriarch-reactor",
@@ -2713,7 +3253,9 @@ export const ITEMS: Item[] = [
     "sellValue": 13000,
     "recycleValue": 5200,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "mechanical-components",
@@ -2723,7 +3265,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "keep",
-    "reason": "Crafting material - needed for upgrades"
+    "reason": "Crafting material - needed for upgrades",
+    "description": "Used to craft a wide range of items. Can be recycled into crafting materials.",
+    "workbench": "Refiner"
   },
   {
     "id": "medium-ammo",
@@ -2733,7 +3277,9 @@ export const ITEMS: Item[] = [
     "sellValue": 6,
     "recycleValue": 2,
     "decision": "keep",
-    "reason": "Medium bullets used mainly with medium-caliber weapons. Such as Rattler, Tempest, Arpeggio, Renegade and Torrente."
+    "reason": "Medium bullets used mainly with medium-caliber weapons. Such as Rattler, Tempest, Arpeggio, Renegade and Torrente.",
+    "description": "Medium bullets used mainly with medium-caliber weapons. Such as Rattler, Tempest, Arpeggio, Renegade and Torrente.",
+    "workbench": "Workbench"
   },
   {
     "id": "medium-gun-parts",
@@ -2743,7 +3289,9 @@ export const ITEMS: Item[] = [
     "sellValue": 700,
     "recycleValue": 280,
     "decision": "keep",
-    "reason": "ARC material - needed for upgrades"
+    "reason": "ARC material - needed for upgrades",
+    "description": "Assorted spare parts used for rifles. ",
+    "workbench": ""
   },
   {
     "id": "medium-gun-parts-recipe",
@@ -2753,7 +3301,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft Medium Gun Parts",
+    "workbench": ""
   },
   {
     "id": "medium-shield",
@@ -2763,7 +3313,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "keep",
-    "reason": "A standard shield that blocks a medium portion of incoming damage at a moderate cost to mobility."
+    "reason": "A standard shield that blocks a medium portion of incoming damage at a moderate cost to mobility.",
+    "description": "A standard shield that blocks a medium portion of incoming damage at a moderate cost to mobility.",
+    "workbench": "Equipment Bench"
   },
   {
     "id": "metal-brackets",
@@ -2773,7 +3325,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into metal parts.",
+    "workbench": ""
   },
   {
     "id": "metal-parts",
@@ -2783,7 +3337,9 @@ export const ITEMS: Item[] = [
     "sellValue": 75,
     "recycleValue": 30,
     "decision": "keep",
-    "reason": "Used to craft a wide range of items."
+    "reason": "Used to craft a wide range of items.",
+    "description": "Used to craft a wide range of items.",
+    "workbench": ""
   },
   {
     "id": "microscope",
@@ -2793,7 +3349,9 @@ export const ITEMS: Item[] = [
     "sellValue": 3000,
     "recycleValue": 1200,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "mini-centrifuge",
@@ -2803,7 +3361,9 @@ export const ITEMS: Item[] = [
     "sellValue": 3000,
     "recycleValue": 1200,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials",
+    "workbench": ""
   },
   {
     "id": "mod-components",
@@ -2813,7 +3373,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1750,
     "recycleValue": 700,
     "decision": "keep",
-    "reason": "Crafting material - needed for upgrades"
+    "reason": "Crafting material - needed for upgrades",
+    "description": "Used to craft weapon mods. Can be recycled into crafting materials.",
+    "workbench": "Refiner"
   },
   {
     "id": "moss",
@@ -2823,7 +3385,9 @@ export const ITEMS: Item[] = [
     "sellValue": 500,
     "recycleValue": 200,
     "decision": "keep",
-    "reason": "ARC material - needed for upgrades"
+    "reason": "ARC material - needed for upgrades",
+    "description": "Can be used to regain a small amount of health.",
+    "workbench": ""
   },
   {
     "id": "motor",
@@ -2833,7 +3397,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "mushroom",
@@ -2843,7 +3409,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "keep",
-    "reason": "Valuable natural resource"
+    "reason": "Valuable natural resource",
+    "description": "Can be consumed to regain a small amount of health.",
+    "workbench": ""
   },
   {
     "id": "music-album",
@@ -2853,7 +3421,9 @@ export const ITEMS: Item[] = [
     "sellValue": 3000,
     "recycleValue": 1200,
     "decision": "sell",
-    "reason": "Trinket - vendor for 3,000cr"
+    "reason": "Trinket - vendor for 3,000cr",
+    "description": "Perfect for relaxing nights at home, casual get-togethers, and private air and guitar concerts.",
+    "workbench": ""
   },
   {
     "id": "music-box",
@@ -2863,7 +3433,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "sell",
-    "reason": "Trinket - vendor for 5,000cr"
+    "reason": "Trinket - vendor for 5,000cr",
+    "description": "Worth a small fortune.",
+    "workbench": ""
   },
   {
     "id": "muzzle-brake-i",
@@ -2873,7 +3445,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "keep",
-    "reason": "Weapon mod - improves your guns"
+    "reason": "Weapon mod - improves your guns",
+    "description": "Slightly reduces both vertical recoil & horizontal recoil.",
+    "workbench": "Weapon Bench"
   },
   {
     "id": "muzzle-brake-ii",
@@ -2883,7 +3457,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "keep",
-    "reason": "Weapon mod - improves your guns"
+    "reason": "Weapon mod - improves your guns",
+    "description": "Moderately reduces both vertical recoil & horizontal recoil.",
+    "workbench": ""
   },
   {
     "id": "muzzle-brake-ii-recipe",
@@ -2893,7 +3469,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Muzzle Brake II",
+    "workbench": ""
   },
   {
     "id": "muzzle-brake-iii",
@@ -2903,7 +3481,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Weapon mod - improves your guns"
+    "reason": "Weapon mod - improves your guns",
+    "description": "Significantly reduces both vertical recoil & horizontal recoil.",
+    "workbench": ""
   },
   {
     "id": "muzzle-brake-iii-recipe",
@@ -2913,7 +3493,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Muzzle Brake III",
+    "workbench": ""
   },
   {
     "id": "noisemaker",
@@ -2923,7 +3505,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "keep",
-    "reason": "Consumable - use in raids"
+    "reason": "Consumable - use in raids",
+    "description": "A deployable proximity sensor that sounds an alarm when enemy raiders are detected.",
+    "workbench": ""
   },
   {
     "id": "number-plate",
@@ -2933,7 +3517,9 @@ export const ITEMS: Item[] = [
     "sellValue": 270,
     "recycleValue": 108,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into metal parts.",
+    "workbench": ""
   },
   {
     "id": "oil",
@@ -2943,7 +3529,9 @@ export const ITEMS: Item[] = [
     "sellValue": 300,
     "recycleValue": 120,
     "decision": "keep",
-    "reason": "ARC material - needed for upgrades"
+    "reason": "ARC material - needed for upgrades",
+    "description": "Used to craft weapons and explosives. Can be recycled into chemicals.",
+    "workbench": ""
   },
   {
     "id": "olives",
@@ -2953,7 +3541,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "sell",
-    "reason": "Nature item - sell for 640cr"
+    "reason": "Nature item - sell for 640cr",
+    "description": "Can be consumed for a small amount of stamina.",
+    "workbench": ""
   },
   {
     "id": "osprey-recipe",
@@ -2963,7 +3553,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Has reliable damage output and accuracy.",
+    "workbench": "Gunsmith II"
   },
   {
     "id": "osprey-i",
@@ -2973,7 +3565,9 @@ export const ITEMS: Item[] = [
     "sellValue": 7000,
     "recycleValue": 2800,
     "decision": "keep",
-    "reason": "Weapon worth 7,000cr"
+    "reason": "Weapon worth 7,000cr",
+    "description": "A scoped bolt-action sniper rifle with reliable damage output and accuracy.",
+    "workbench": "Weapon Bench 2"
   },
   {
     "id": "osprey-ii",
@@ -2983,7 +3577,9 @@ export const ITEMS: Item[] = [
     "sellValue": 10000,
     "recycleValue": 4000,
     "decision": "keep",
-    "reason": "Weapon worth 10,000cr"
+    "reason": "Weapon worth 10,000cr",
+    "description": "A scoped bolt-action sniper rifle with reliable damage output and accuracy.",
+    "workbench": "Gunsmith III"
   },
   {
     "id": "osprey-iii",
@@ -2993,7 +3589,9 @@ export const ITEMS: Item[] = [
     "sellValue": 13000,
     "recycleValue": 5200,
     "decision": "keep",
-    "reason": "Weapon worth 13,000cr"
+    "reason": "Weapon worth 13,000cr",
+    "description": "A scoped bolt-action sniper rifle with reliable damage output and accuracy.",
+    "workbench": "Gunsmith III"
   },
   {
     "id": "osprey-iv",
@@ -3003,7 +3601,9 @@ export const ITEMS: Item[] = [
     "sellValue": 17000,
     "recycleValue": 6800,
     "decision": "keep",
-    "reason": "Weapon worth 17,000cr"
+    "reason": "Weapon worth 17,000cr",
+    "description": "A scoped bolt-action sniper rifle with reliable damage output and accuracy.",
+    "workbench": "Gunsmith III"
   },
   {
     "id": "padded-stock",
@@ -3013,7 +3613,9 @@ export const ITEMS: Item[] = [
     "sellValue": 0,
     "recycleValue": 0,
     "decision": "keep",
-    "reason": "Weapon mod - improves your guns"
+    "reason": "Weapon mod - improves your guns",
+    "description": "Significantly improves stability.",
+    "workbench": ""
   },
   {
     "id": "padded-stock-recipe",
@@ -3023,7 +3625,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Padded Stock",
+    "workbench": ""
   },
   {
     "id": "painted-box",
@@ -3033,7 +3637,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "sell",
-    "reason": "Trinket - vendor for 2,000cr"
+    "reason": "Trinket - vendor for 2,000cr",
+    "description": "May be worth a few coins.",
+    "workbench": ""
   },
   {
     "id": "patrol-car-key",
@@ -3043,7 +3649,9 @@ export const ITEMS: Item[] = [
     "sellValue": 100,
     "recycleValue": 40,
     "decision": "keep",
-    "reason": "Key - opens locked areas"
+    "reason": "Key - opens locked areas",
+    "description": "Unlocks the rear door of a patrol car",
+    "workbench": ""
   },
   {
     "id": "photoelectric-cloak",
@@ -3053,7 +3661,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "sell",
-    "reason": "High value consumable - 5,000cr"
+    "reason": "High value consumable - 5,000cr",
+    "description": "A gadget that allows the user to conceal themselves from ARC.",
+    "workbench": "Utility Bench"
   },
   {
     "id": "plastic-parts",
@@ -3063,7 +3673,9 @@ export const ITEMS: Item[] = [
     "sellValue": 60,
     "recycleValue": 24,
     "decision": "keep",
-    "reason": "Used to craft a wide range of items."
+    "reason": "Used to craft a wide range of items.",
+    "description": "Used to craft a wide range of items.",
+    "workbench": ""
   },
   {
     "id": "playing-cards",
@@ -3073,7 +3685,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "sell",
-    "reason": "Trinket - vendor for 5,000cr"
+    "reason": "Trinket - vendor for 5,000cr",
+    "description": "Speranzans love to see who can build the tallest tower - before the tremors knock them down.",
+    "workbench": ""
   },
   {
     "id": "polluted-air-filter",
@@ -3083,7 +3697,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "pop-trigger",
@@ -3093,7 +3709,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "portable-television",
@@ -3103,7 +3721,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "poster-natural-wonder",
@@ -3113,7 +3733,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "sell",
-    "reason": "Trinket - vendor for 2,000cr"
+    "reason": "Trinket - vendor for 2,000cr",
+    "description": "If you stand close and squint your eyes, it's like the world never came crumbling down.",
+    "workbench": ""
   },
   {
     "id": "pottery",
@@ -3123,7 +3745,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "sell",
-    "reason": "Trinket - vendor for 2,000cr"
+    "reason": "Trinket - vendor for 2,000cr",
+    "description": "A piece of hand-crafted pottery.",
+    "workbench": ""
   },
   {
     "id": "power-bank",
@@ -3133,7 +3757,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "power-cable",
@@ -3143,7 +3769,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "power-rod",
@@ -3153,7 +3781,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5500,
     "recycleValue": 2200,
     "decision": "keep",
-    "reason": "Crafting material - needed for upgrades"
+    "reason": "Crafting material - needed for upgrades",
+    "description": "Used to open the Locked room near the Loading Bay. Also Used to craft shields. Can be recycled into crafting materials.",
+    "workbench": "Refiner"
   },
   {
     "id": "prickly-pear",
@@ -3163,7 +3793,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "sell",
-    "reason": "Nature item - sell for 640cr"
+    "reason": "Nature item - sell for 640cr",
+    "description": "Can be consumed for a small amount of stamina.",
+    "workbench": ""
   },
   {
     "id": "processor",
@@ -3173,7 +3805,9 @@ export const ITEMS: Item[] = [
     "sellValue": 500,
     "recycleValue": 200,
     "decision": "keep",
-    "reason": "ARC material - needed for upgrades"
+    "reason": "ARC material - needed for upgrades",
+    "description": "Used in crafting.",
+    "workbench": ""
   },
   {
     "id": "projector",
@@ -3183,7 +3817,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "pulse-mine",
@@ -3193,7 +3829,9 @@ export const ITEMS: Item[] = [
     "sellValue": 470,
     "recycleValue": 188,
     "decision": "keep",
-    "reason": "Consumable - use in raids"
+    "reason": "Consumable - use in raids",
+    "description": "A proximity-triggered mine that pops up and knocks back anything within its radius",
+    "workbench": ""
   },
   {
     "id": "pulse-mine-blueprint",
@@ -3203,7 +3841,9 @@ export const ITEMS: Item[] = [
     "sellValue": 0,
     "recycleValue": 0,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Pulse Mine",
+    "workbench": ""
   },
   {
     "id": "queen-reactor",
@@ -3213,7 +3853,9 @@ export const ITEMS: Item[] = [
     "sellValue": 13000,
     "recycleValue": 5200,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials. Used to craft: Equalizer, Jupiter",
+    "workbench": ""
   },
   {
     "id": "radio",
@@ -3223,7 +3865,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "radio-relay",
@@ -3233,7 +3877,9 @@ export const ITEMS: Item[] = [
     "sellValue": 3000,
     "recycleValue": 1200,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "raider-hatch-key",
@@ -3243,7 +3889,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "keep",
-    "reason": "Key - opens locked areas"
+    "reason": "Key - opens locked areas",
+    "description": "Unlocks a Raider Hatch.",
+    "workbench": ""
   },
   {
     "id": "rattler-i",
@@ -3253,7 +3901,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1750,
     "recycleValue": 700,
     "decision": "keep",
-    "reason": "Weapon worth 1,750cr"
+    "reason": "Weapon worth 1,750cr",
+    "description": "Fully automatic assault rifle. A cheap offensive option, but has to be reloaded 2 bullets at a time.",
+    "workbench": "Weapon Bench"
   },
   {
     "id": "rattler-ii",
@@ -3263,7 +3913,9 @@ export const ITEMS: Item[] = [
     "sellValue": 3000,
     "recycleValue": 1200,
     "decision": "keep",
-    "reason": "Weapon worth 3,000cr"
+    "reason": "Weapon worth 3,000cr",
+    "description": "Fully automatic assault rifle. A cheap offensive option, but has to be reloaded 2 bullets at a time.",
+    "workbench": "Weapon Bench I"
   },
   {
     "id": "rattler-iii",
@@ -3273,7 +3925,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Weapon worth 5,000cr"
+    "reason": "Weapon worth 5,000cr",
+    "description": "Fully automatic assault rifle. A cheap offensive option, but has to be reloaded 2 bullets at a time.",
+    "workbench": "Weapon Bench I"
   },
   {
     "id": "rattler-iv",
@@ -3283,7 +3937,9 @@ export const ITEMS: Item[] = [
     "sellValue": 7000,
     "recycleValue": 2800,
     "decision": "keep",
-    "reason": "Weapon worth 7,000cr"
+    "reason": "Weapon worth 7,000cr",
+    "description": "Fully automatic assault rifle. A cheap offensive option, but has to be reloaded 2 bullets at a time.",
+    "workbench": "Weapon Bench I"
   },
   {
     "id": "recorder",
@@ -3293,7 +3949,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "keep",
-    "reason": "Consumable - use in raids"
+    "reason": "Consumable - use in raids",
+    "description": "A playable recorder used to attract ARC's attention and impress other Raiders.",
+    "workbench": ""
   },
   {
     "id": "red-coral-jewelry",
@@ -3303,7 +3961,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "sell",
-    "reason": "Trinket - vendor for 5,000cr"
+    "reason": "Trinket - vendor for 5,000cr",
+    "description": "Valued for its fine craftmanship, and effortless ability to make your eyes pop.",
+    "workbench": ""
   },
   {
     "id": "red-light-stick",
@@ -3313,7 +3973,9 @@ export const ITEMS: Item[] = [
     "sellValue": 150,
     "recycleValue": 60,
     "decision": "keep",
-    "reason": "Consumable - use in raids"
+    "reason": "Consumable - use in raids",
+    "description": "A throwable chemical light that illuminates the area around it.",
+    "workbench": ""
   },
   {
     "id": "red-light-stick-blueprint",
@@ -3323,7 +3985,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Red Light Stick.",
+    "workbench": ""
   },
   {
     "id": "refinement-1",
@@ -3333,7 +3997,9 @@ export const ITEMS: Item[] = [
     "sellValue": 0,
     "recycleValue": 0,
     "decision": "keep",
-    "reason": "Cosmetic or special item"
+    "reason": "Cosmetic or special item",
+    "description": "A refined material used in crafting.",
+    "workbench": ""
   },
   {
     "id": "remote-control",
@@ -3343,7 +4009,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "remote-raider-flare",
@@ -3353,7 +4021,9 @@ export const ITEMS: Item[] = [
     "sellValue": 270,
     "recycleValue": 108,
     "decision": "keep",
-    "reason": "Consumable - use in raids"
+    "reason": "Consumable - use in raids",
+    "description": "A deployable device that, when manually triggered, launches a Raider Distress Flare.",
+    "workbench": ""
   },
   {
     "id": "remote-raider-flare-blueprint",
@@ -3363,7 +4033,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Allows you to craft the Remote Raider Flare.",
+    "workbench": ""
   },
   {
     "id": "renegade-i",
@@ -3373,7 +4045,9 @@ export const ITEMS: Item[] = [
     "sellValue": 7000,
     "recycleValue": 2800,
     "decision": "keep",
-    "reason": "Weapon worth 7,000cr"
+    "reason": "Weapon worth 7,000cr",
+    "description": "Lever-action battle rifle with high damage output, accuracy, and headshot damage.",
+    "workbench": "Weapon Bench 2"
   },
   {
     "id": "renegade-ii",
@@ -3383,7 +4057,9 @@ export const ITEMS: Item[] = [
     "sellValue": 10000,
     "recycleValue": 4000,
     "decision": "keep",
-    "reason": "Weapon worth 10,000cr"
+    "reason": "Weapon worth 10,000cr",
+    "description": "Lever-action battle rifle with high damage output, accuracy, and headshot damage.",
+    "workbench": "Weapon Bench I"
   },
   {
     "id": "renegade-iii",
@@ -3393,7 +4069,9 @@ export const ITEMS: Item[] = [
     "sellValue": 13000,
     "recycleValue": 5200,
     "decision": "keep",
-    "reason": "Weapon worth 13,000cr"
+    "reason": "Weapon worth 13,000cr",
+    "description": "Lever-action battle rifle with high damage output, accuracy, and headshot damage.",
+    "workbench": "Gunsmith III"
   },
   {
     "id": "renegade-iv",
@@ -3403,7 +4081,9 @@ export const ITEMS: Item[] = [
     "sellValue": 17000,
     "recycleValue": 6800,
     "decision": "keep",
-    "reason": "Weapon worth 17,000cr"
+    "reason": "Weapon worth 17,000cr",
+    "description": "Lever-action battle rifle with high damage output, accuracy, and headshot damage.",
+    "workbench": "Weapon Bench I"
   },
   {
     "id": "resin",
@@ -3413,7 +4093,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "keep",
-    "reason": "Valuable natural resource"
+    "reason": "Valuable natural resource",
+    "description": "Can be used to gradually restore a small amount of health over time.",
+    "workbench": ""
   },
   {
     "id": "ripped-safety-vest",
@@ -3423,7 +4105,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "A remnant of a time long lost, when it was fashionable to stand out.",
+    "workbench": ""
   },
   {
     "id": "rocketeer-part",
@@ -3433,7 +4117,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "A salvaged component from a Rocketeer unit.",
+    "workbench": ""
   },
   {
     "id": "rocket-thruster",
@@ -3443,7 +4129,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "roots",
@@ -3453,7 +4141,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "sell",
-    "reason": "Nature item - sell for 640cr"
+    "reason": "Nature item - sell for 640cr",
+    "description": "May be worth a few coins.",
+    "workbench": ""
   },
   {
     "id": "rope",
@@ -3463,7 +4153,9 @@ export const ITEMS: Item[] = [
     "sellValue": 500,
     "recycleValue": 200,
     "decision": "keep",
-    "reason": "ARC material - needed for upgrades"
+    "reason": "ARC material - needed for upgrades",
+    "description": "Used in crafting.",
+    "workbench": ""
   },
   {
     "id": "rosary",
@@ -3473,7 +4165,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "sell",
-    "reason": "Trinket - vendor for 2,000cr"
+    "reason": "Trinket - vendor for 2,000cr",
+    "description": "May be worth a few coins.",
+    "workbench": ""
   },
   {
     "id": "rotary-encoder",
@@ -3483,7 +4177,9 @@ export const ITEMS: Item[] = [
     "sellValue": 3000,
     "recycleValue": 1200,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials. ",
+    "workbench": ""
   },
   {
     "id": "rubber-duck",
@@ -3493,7 +4189,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "sell",
-    "reason": "Trinket - vendor for 1,000cr"
+    "reason": "Trinket - vendor for 1,000cr",
+    "description": "Always there to lend an ear, should you need it.",
+    "workbench": ""
   },
   {
     "id": "rubber-pad",
@@ -3503,7 +4201,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into rubber parts.",
+    "workbench": ""
   },
   {
     "id": "rubber-parts-recipe",
@@ -3513,7 +4213,9 @@ export const ITEMS: Item[] = [
     "sellValue": 50,
     "recycleValue": 20,
     "decision": "keep",
-    "reason": "Used to craft a wide range of items."
+    "reason": "Used to craft a wide range of items.",
+    "description": "Used to craft a wide range of items.",
+    "workbench": ""
   },
   {
     "id": "ruined-accordion",
@@ -3523,7 +4225,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "ruined-augment",
@@ -3533,7 +4237,9 @@ export const ITEMS: Item[] = [
     "sellValue": 270,
     "recycleValue": 108,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "An augment ruined beyond repair",
+    "workbench": ""
   },
   {
     "id": "ruined-baton",
@@ -3543,7 +4249,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "ruined-handcuffs",
@@ -3553,7 +4261,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "ruined-parachute",
@@ -3563,7 +4273,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "ruined-riot-shield",
@@ -3573,7 +4285,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "ruined-tactical-vest",
@@ -3583,7 +4297,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "rusted-bolts",
@@ -3593,7 +4309,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Some rusted old bolts",
+    "workbench": ""
   },
   {
     "id": "rusted-gear",
@@ -3603,7 +4321,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "rusted-shut-medical-kit",
@@ -3613,7 +4333,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting material.",
+    "workbench": ""
   },
   {
     "id": "rusted-tools",
@@ -3623,7 +4345,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into metal parts.",
+    "workbench": ""
   },
   {
     "id": "rusty-arc-steel",
@@ -3633,7 +4357,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Obtained from ARC enemies and activities. Can be recycled into scrap metal.",
+    "workbench": ""
   },
   {
     "id": "sample-cleaner",
@@ -3643,7 +4369,9 @@ export const ITEMS: Item[] = [
     "sellValue": 3000,
     "recycleValue": 1200,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "seeker-grenade",
@@ -3653,7 +4381,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "keep",
-    "reason": "Consumable - use in raids"
+    "reason": "Consumable - use in raids",
+    "description": "A homing grenade that targets a single nearby ARC dealing explosive damage on impact",
+    "workbench": "Explosives Bench I"
   },
   {
     "id": "seeker-grenade-blueprint",
@@ -3663,7 +4393,9 @@ export const ITEMS: Item[] = [
     "sellValue": 0,
     "recycleValue": 0,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Seeker Grenade",
+    "workbench": ""
   },
   {
     "id": "sensors-recipe",
@@ -3673,7 +4405,9 @@ export const ITEMS: Item[] = [
     "sellValue": 500,
     "recycleValue": 200,
     "decision": "keep",
-    "reason": "ARC material - needed for upgrades"
+    "reason": "ARC material - needed for upgrades",
+    "description": "Used to craft utility items and explosives. Can be recycled into scrap metal.",
+    "workbench": ""
   },
   {
     "id": "sentinel-part",
@@ -3683,7 +4417,9 @@ export const ITEMS: Item[] = [
     "sellValue": 3000,
     "recycleValue": 1200,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "shaker",
@@ -3693,7 +4429,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "keep",
-    "reason": "Consumable - use in raids"
+    "reason": "Consumable - use in raids",
+    "description": "A rhythmic instrument used to attract ARC's attention and impress other Raiders.",
+    "workbench": ""
   },
   {
     "id": "shield-recharger",
@@ -3703,7 +4441,9 @@ export const ITEMS: Item[] = [
     "sellValue": 520,
     "recycleValue": 208,
     "decision": "keep",
-    "reason": "Consumable - use in raids"
+    "reason": "Consumable - use in raids",
+    "description": "A handheld repair kit that recharges a shield on use.",
+    "workbench": "Equipment Bench"
   },
   {
     "id": "shotgun-ammo",
@@ -3713,7 +4453,9 @@ export const ITEMS: Item[] = [
     "sellValue": 20,
     "recycleValue": 8,
     "decision": "keep",
-    "reason": "Shotgun shells used for shotguns."
+    "reason": "Shotgun shells used for shotguns.",
+    "description": "Shotgun shells used for shotguns.",
+    "workbench": "Workbench"
   },
   {
     "id": "shotgun-choke-i",
@@ -3723,7 +4465,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "keep",
-    "reason": "Weapon mod - improves your guns"
+    "reason": "Weapon mod - improves your guns",
+    "description": "Slightly reduces base dispersion.",
+    "workbench": "Gunsmith 1"
   },
   {
     "id": "shotgun-choke-ii",
@@ -3733,7 +4477,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "keep",
-    "reason": "Weapon mod - improves your guns"
+    "reason": "Weapon mod - improves your guns",
+    "description": "Moderately reduces base dispersion.",
+    "workbench": ""
   },
   {
     "id": "shotgun-choke-ii-recipe",
@@ -3743,7 +4489,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Shotgun Choke II",
+    "workbench": "Weapon Bench"
   },
   {
     "id": "shotgun-choke-iii",
@@ -3753,7 +4501,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Weapon mod - improves your guns"
+    "reason": "Weapon mod - improves your guns",
+    "description": "Significantly reduces base dispersion. Compatible with: II Toro, Vulcano",
+    "workbench": ""
   },
   {
     "id": "shotgun-choke-iii-recipe",
@@ -3763,7 +4513,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Shotgun Choke III",
+    "workbench": ""
   },
   {
     "id": "shotgun-gun-parts",
@@ -3773,7 +4525,9 @@ export const ITEMS: Item[] = [
     "sellValue": 700,
     "recycleValue": 280,
     "decision": "keep",
-    "reason": "Specialized components from shotgun-type weapons, used in crafting."
+    "reason": "Specialized components from shotgun-type weapons, used in crafting.",
+    "description": "Specialized components from shotgun-type weapons, used in crafting.",
+    "workbench": ""
   },
   {
     "id": "shotgun-silencer",
@@ -3783,7 +4537,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "sell",
-    "reason": "High value - sell for 5,000cr"
+    "reason": "High value - sell for 5,000cr",
+    "description": "Moderately reduces the amount of noise produced when firing.",
+    "workbench": ""
   },
   {
     "id": "shotgun-silencer-blueprint",
@@ -3793,7 +4549,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Shotgun Silencer. Moderately reduces the amount of noise produced when firing.",
+    "workbench": ""
   },
   {
     "id": "showstopper",
@@ -3803,7 +4561,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2200,
     "recycleValue": 880,
     "decision": "keep",
-    "reason": "Throwable - useful in combat"
+    "reason": "Throwable - useful in combat",
+    "description": "A grenade that detonates after a delay, stunning enemies within its radius.",
+    "workbench": "Explosives Bench III"
   },
   {
     "id": "showstopper-blueprint",
@@ -3813,7 +4573,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Showstopper.",
+    "workbench": ""
   },
   {
     "id": "shrapnel-grenade",
@@ -3823,7 +4585,9 @@ export const ITEMS: Item[] = [
     "sellValue": 800,
     "recycleValue": 320,
     "decision": "keep",
-    "reason": "Throwable - useful in combat"
+    "reason": "Throwable - useful in combat",
+    "description": "A makeshift fuze grenade that bursts into razor-sharp fragments upon detonation.",
+    "workbench": "Explosives Bench"
   },
   {
     "id": "shredder-gyro",
@@ -3833,7 +4597,9 @@ export const ITEMS: Item[] = [
     "sellValue": 3000,
     "recycleValue": 1200,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "signal-amplifier",
@@ -3843,7 +4609,9 @@ export const ITEMS: Item[] = [
     "sellValue": 3000,
     "recycleValue": 1200,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "silencer-i",
@@ -3853,7 +4621,9 @@ export const ITEMS: Item[] = [
     "sellValue": 0,
     "recycleValue": 0,
     "decision": "keep",
-    "reason": "Weapon mod - improves your guns"
+    "reason": "Weapon mod - improves your guns",
+    "description": "Slightly reduces the amount of noise produced when firing.",
+    "workbench": ""
   },
   {
     "id": "silencer-i-recipe",
@@ -3863,7 +4633,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Silencer I",
+    "workbench": ""
   },
   {
     "id": "silencer-ii",
@@ -3873,7 +4645,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Weapon mod - improves your guns"
+    "reason": "Weapon mod - improves your guns",
+    "description": "Moderately reduces the amount of noise produced when firing.  Compatible with: Rattler,  Ferro, Tempest, Arpeggio, Bettina.",
+    "workbench": ""
   },
   {
     "id": "silencer-ii-recipe",
@@ -3883,7 +4657,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Silencer II",
+    "workbench": ""
   },
   {
     "id": "silencer-iii",
@@ -3893,7 +4669,9 @@ export const ITEMS: Item[] = [
     "sellValue": 7000,
     "recycleValue": 2800,
     "decision": "keep",
-    "reason": "Weapon mod - improves your guns"
+    "reason": "Weapon mod - improves your guns",
+    "description": "Significantly reduces the amount of noise produced when firing.",
+    "workbench": ""
   },
   {
     "id": "silencer-iii-recipe",
@@ -3903,7 +4681,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Silencer III",
+    "workbench": ""
   },
   {
     "id": "silver-teaspoon-set",
@@ -3913,7 +4693,9 @@ export const ITEMS: Item[] = [
     "sellValue": 3000,
     "recycleValue": 1200,
     "decision": "sell",
-    "reason": "Trinket - vendor for 3,000cr"
+    "reason": "Trinket - vendor for 3,000cr",
+    "description": "A shining, shimmering set  of refinement and elegance.",
+    "workbench": ""
   },
   {
     "id": "simple-gun-parts",
@@ -3923,7 +4705,9 @@ export const ITEMS: Item[] = [
     "sellValue": 330,
     "recycleValue": 132,
     "decision": "keep",
-    "reason": "ARC material - needed for upgrades"
+    "reason": "ARC material - needed for upgrades",
+    "description": "Used to craft weapons. Can be recycled into scrap metal.",
+    "workbench": ""
   },
   {
     "id": "smoke-grenade",
@@ -3933,7 +4717,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "A grenade that creates a lingering smoke cloud on impact, blocking visibility from other Raiders.",
+    "workbench": "Utility Bench 1 or Basic Bench"
   },
   {
     "id": "smoke-grenade-blueprint",
@@ -3943,7 +4729,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Smoke Grenade",
+    "workbench": ""
   },
   {
     "id": "laser-trap-smoke-recipe",
@@ -3953,7 +4741,9 @@ export const ITEMS: Item[] = [
     "sellValue": 0,
     "recycleValue": 0,
     "decision": "keep",
-    "reason": "Consumable - use in raids"
+    "reason": "Consumable - use in raids",
+    "description": "A laser trip wire that detonates a Smoke Grenade.",
+    "workbench": ""
   },
   {
     "id": "snap-blast-grenade",
@@ -3963,7 +4753,9 @@ export const ITEMS: Item[] = [
     "sellValue": 800,
     "recycleValue": 320,
     "decision": "keep",
-    "reason": "Consumable - use in raids"
+    "reason": "Consumable - use in raids",
+    "description": "A grenade that sticks to surfaces, dealing explosive damage after a short delay.",
+    "workbench": "Explosives Bench"
   },
   {
     "id": "snap-hook",
@@ -3973,7 +4765,9 @@ export const ITEMS: Item[] = [
     "sellValue": 14000,
     "recycleValue": 5600,
     "decision": "sell",
-    "reason": "High value consumable - 14,000cr"
+    "reason": "High value consumable - 14,000cr",
+    "description": "A gadget that allows the user to scale structures and cover large distances.",
+    "workbench": "Utility Bench 3"
   },
   {
     "id": "snap-hook-recipe",
@@ -3983,7 +4777,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Snap Hook",
+    "workbench": ""
   },
   {
     "id": "snitch-scanner",
@@ -3993,7 +4789,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Gathered from ARC Snitches. Can be recycled into ARC Alloy.",
+    "workbench": ""
   },
   {
     "id": "snowball",
@@ -4003,7 +4801,9 @@ export const ITEMS: Item[] = [
     "sellValue": 10,
     "recycleValue": 4,
     "decision": "sell",
-    "reason": "Nature item - sell for 10cr"
+    "reason": "Nature item - sell for 10cr",
+    "description": "A compact snowball fashioned out of the most malleable and aerodynamic snow.",
+    "workbench": ""
   },
   {
     "id": "spaceport-container-storage-key",
@@ -4013,7 +4813,9 @@ export const ITEMS: Item[] = [
     "sellValue": 100,
     "recycleValue": 40,
     "decision": "keep",
-    "reason": "Key - opens locked areas"
+    "reason": "Key - opens locked areas",
+    "description": "Unlocks a door in the Container Storage in Spaceport",
+    "workbench": ""
   },
   {
     "id": "spaceport-ground-control-key",
@@ -4023,7 +4825,9 @@ export const ITEMS: Item[] = [
     "sellValue": 100,
     "recycleValue": 40,
     "decision": "keep",
-    "reason": "Key - opens locked areas"
+    "reason": "Key - opens locked areas",
+    "description": "Unlocks a door to the Ground Control Tower in Spaceport",
+    "workbench": ""
   },
   {
     "id": "spaceport-outskirts-bunker-key",
@@ -4033,7 +4837,9 @@ export const ITEMS: Item[] = [
     "sellValue": 100,
     "recycleValue": 40,
     "decision": "keep",
-    "reason": "Key - opens locked areas"
+    "reason": "Key - opens locked areas",
+    "description": "A makeshift key that lets you open the Outskirts Bunker on Spaceport",
+    "workbench": ""
   },
   {
     "id": "spaceport-trench-tower-key",
@@ -4043,7 +4849,9 @@ export const ITEMS: Item[] = [
     "sellValue": 100,
     "recycleValue": 40,
     "decision": "keep",
-    "reason": "Key - opens locked areas"
+    "reason": "Key - opens locked areas",
+    "description": "Unlocks a door to the Trench Towers in Spaceport",
+    "workbench": ""
   },
   {
     "id": "spaceport-warehouse-key",
@@ -4053,7 +4861,9 @@ export const ITEMS: Item[] = [
     "sellValue": 100,
     "recycleValue": 40,
     "decision": "keep",
-    "reason": "Key - opens locked areas"
+    "reason": "Key - opens locked areas",
+    "description": "Unlocks a door in the Shipping Warehouse in Spaceport",
+    "workbench": ""
   },
   {
     "id": "speaker-component",
@@ -4063,7 +4873,9 @@ export const ITEMS: Item[] = [
     "sellValue": 500,
     "recycleValue": 200,
     "decision": "keep",
-    "reason": "ARC material - needed for upgrades"
+    "reason": "ARC material - needed for upgrades",
+    "description": "Used in crafting.",
+    "workbench": ""
   },
   {
     "id": "spectrometer",
@@ -4073,7 +4885,9 @@ export const ITEMS: Item[] = [
     "sellValue": 3000,
     "recycleValue": 1200,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials",
+    "workbench": ""
   },
   {
     "id": "spectrum-analyzer",
@@ -4083,7 +4897,9 @@ export const ITEMS: Item[] = [
     "sellValue": 3500,
     "recycleValue": 1400,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials",
+    "workbench": ""
   },
   {
     "id": "spotter-relay",
@@ -4093,7 +4909,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials",
+    "workbench": ""
   },
   {
     "id": "spring-cushion",
@@ -4103,7 +4921,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "stable-stock-i",
@@ -4113,7 +4933,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "keep",
-    "reason": "Weapon mod - improves your guns"
+    "reason": "Weapon mod - improves your guns",
+    "description": "Slightly improves dispersion & recoil recovery time. Compatible with: Rattler, Ferro, Arpeggio, Bettina, Kettle.",
+    "workbench": "Gunsmith"
   },
   {
     "id": "stable-stock-ii",
@@ -4123,7 +4945,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "keep",
-    "reason": "Weapon mod - improves your guns"
+    "reason": "Weapon mod - improves your guns",
+    "description": "Moderately improves dispersion & recoil recovery time.",
+    "workbench": ""
   },
   {
     "id": "stable-stock-ii-recipe",
@@ -4133,7 +4957,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Stable Stock II",
+    "workbench": ""
   },
   {
     "id": "stable-stock-iii",
@@ -4143,7 +4969,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Weapon mod - improves your guns"
+    "reason": "Weapon mod - improves your guns",
+    "description": "Significantly improves dispersion & recoil recovery  time.",
+    "workbench": ""
   },
   {
     "id": "stable-stock-iii-recipe",
@@ -4153,7 +4981,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Stable Stock III",
+    "workbench": ""
   },
   {
     "id": "statuette",
@@ -4163,7 +4993,9 @@ export const ITEMS: Item[] = [
     "sellValue": 3000,
     "recycleValue": 1200,
     "decision": "sell",
-    "reason": "Trinket - vendor for 3,000cr"
+    "reason": "Trinket - vendor for 3,000cr",
+    "description": "A small decorative statuette.",
+    "workbench": ""
   },
   {
     "id": "spring",
@@ -4173,7 +5005,9 @@ export const ITEMS: Item[] = [
     "sellValue": 300,
     "recycleValue": 120,
     "decision": "keep",
-    "reason": "ARC material - needed for upgrades"
+    "reason": "ARC material - needed for upgrades",
+    "description": "A tightly wound coil of metal. Used to craft a wide range of items. Can be recycled into scrap metal.",
+    "workbench": ""
   },
   {
     "id": "stella-montis-archives-key",
@@ -4183,7 +5017,9 @@ export const ITEMS: Item[] = [
     "sellValue": 100,
     "recycleValue": 40,
     "decision": "keep",
-    "reason": "Key - opens locked areas"
+    "reason": "Key - opens locked areas",
+    "description": "Unlocks a door in the Archives in Stella Montis",
+    "workbench": ""
   },
   {
     "id": "stella-montis-assembly-admin-key",
@@ -4193,7 +5029,9 @@ export const ITEMS: Item[] = [
     "sellValue": 100,
     "recycleValue": 40,
     "decision": "keep",
-    "reason": "Key - opens locked areas"
+    "reason": "Key - opens locked areas",
+    "description": "Unlocks a door in Assembly in Stella Montis",
+    "workbench": ""
   },
   {
     "id": "stella-montis-medical-storage-key",
@@ -4203,7 +5041,9 @@ export const ITEMS: Item[] = [
     "sellValue": 100,
     "recycleValue": 40,
     "decision": "keep",
-    "reason": "Key - opens locked areas"
+    "reason": "Key - opens locked areas",
+    "description": "Unlocks a door in Medical Research in Stella Montis",
+    "workbench": ""
   },
   {
     "id": "stella-montis-security-checkpoint-key",
@@ -4213,7 +5053,9 @@ export const ITEMS: Item[] = [
     "sellValue": 100,
     "recycleValue": 40,
     "decision": "keep",
-    "reason": "Key - opens locked areas"
+    "reason": "Key - opens locked areas",
+    "description": "Unlocks a door in the Security Checkpoint in Stella Montis",
+    "workbench": ""
   },
   {
     "id": "sterilized-bandage",
@@ -4223,7 +5065,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "keep",
-    "reason": "Consumable - use in raids"
+    "reason": "Consumable - use in raids",
+    "description": "A medical item that gradually restores a large amount health over time.",
+    "workbench": "Med Station 2"
   },
   {
     "id": "stitcher-i",
@@ -4233,7 +5077,9 @@ export const ITEMS: Item[] = [
     "sellValue": 800,
     "recycleValue": 320,
     "decision": "keep",
-    "reason": "Weapon worth 800cr"
+    "reason": "Weapon worth 800cr",
+    "description": "Full automatic SMG. Deals good damage, but has quite a low fire-rate and can be hard to control.",
+    "workbench": "Weapon Bench"
   },
   {
     "id": "stitcher-ii",
@@ -4243,7 +5089,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "keep",
-    "reason": "Weapon worth 2,000cr"
+    "reason": "Weapon worth 2,000cr",
+    "description": "Full automatic SMG. Deals good damage, but has quite a low fire-rate and can be hard to control.",
+    "workbench": "Weapon Bench"
   },
   {
     "id": "stitcher-iii",
@@ -4253,7 +5101,9 @@ export const ITEMS: Item[] = [
     "sellValue": 3000,
     "recycleValue": 1200,
     "decision": "keep",
-    "reason": "Weapon worth 3,000cr"
+    "reason": "Weapon worth 3,000cr",
+    "description": "Full automatic SMG. Deals good damage, but has quite a low fire-rate and can be hard to control.",
+    "workbench": "Weapon Bench"
   },
   {
     "id": "stitcher-iv",
@@ -4263,7 +5113,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Weapon worth 5,000cr"
+    "reason": "Weapon worth 5,000cr",
+    "description": "Full automatic SMG. Deals good damage, but has quite a low fire-rate and can be hard to control.",
+    "workbench": "Weapon Bench"
   },
   {
     "id": "surge-shield-recharger",
@@ -4273,7 +5125,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1200,
     "recycleValue": 480,
     "decision": "keep",
-    "reason": "Consumable - use in raids"
+    "reason": "Consumable - use in raids",
+    "description": "A handkeld kit that recharges a shield",
+    "workbench": "Medical Lab II"
   },
   {
     "id": "surveyor-vault",
@@ -4283,7 +5137,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "synthesized-fuel",
@@ -4293,7 +5149,9 @@ export const ITEMS: Item[] = [
     "sellValue": 700,
     "recycleValue": 280,
     "decision": "keep",
-    "reason": "ARC material - needed for upgrades"
+    "reason": "ARC material - needed for upgrades",
+    "description": "Used to craft utility items and explosives. Can be recycled into chemicals.",
+    "workbench": ""
   },
   {
     "id": "syringe",
@@ -4303,7 +5161,9 @@ export const ITEMS: Item[] = [
     "sellValue": 500,
     "recycleValue": 200,
     "decision": "keep",
-    "reason": "ARC material - needed for upgrades"
+    "reason": "ARC material - needed for upgrades",
+    "description": "A sterile syringe for medical use. Used to craft medical supplies. Can be recycled into plastic.",
+    "workbench": ""
   },
   {
     "id": "tactical-mk-1",
@@ -4313,7 +5173,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "keep",
-    "reason": "Basic tactical augment. More Quick Use slots for more tactical choice, but limited survivability and slightly lower looting potential."
+    "reason": "Basic tactical augment. More Quick Use slots for more tactical choice, but limited survivability and slightly lower looting potential.",
+    "description": "Basic tactical augment. More Quick Use slots for more tactical choice, but limited survivability and slightly lower looting potential.",
+    "workbench": "Equipment Bench"
   },
   {
     "id": "tactical-mk-2",
@@ -4323,7 +5185,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "keep",
-    "reason": "Adds more backpack space and an extra utility item slot."
+    "reason": "Adds more backpack space and an extra utility item slot.",
+    "description": "Adds more backpack space and an extra utility item slot.",
+    "workbench": "Equipment Bench"
   },
   {
     "id": "tactical-mk3-defensive",
@@ -4333,7 +5197,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "sell",
-    "reason": "High value - sell for 5,000cr"
+    "reason": "High value - sell for 5,000cr",
+    "description": "A defence-focused augment for keeping shields topped up.",
+    "workbench": "Gear Bench III"
   },
   {
     "id": "tactical-mk3-defensive-blueprint",
@@ -4343,7 +5209,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "a defense-focused augment for keeping Shields topped up",
+    "workbench": ""
   },
   {
     "id": "tactical-mk-3-healing",
@@ -4353,7 +5221,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "sell",
-    "reason": "High value - sell for 5,000cr"
+    "reason": "High value - sell for 5,000cr",
+    "description": "A healing-focused augment which adds extra slots for healing items.",
+    "workbench": "Gear Bench III"
   },
   {
     "id": "tacical-mk3-healing-blueprint",
@@ -4363,7 +5233,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "A healing-focused augment which adds extra slots for healing items.",
+    "workbench": ""
   },
   {
     "id": "tagging-grenade",
@@ -4373,7 +5245,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "keep",
-    "reason": "Consumable - use in raids"
+    "reason": "Consumable - use in raids",
+    "description": "A grenade that detonates after a delay, tagging Raiders and ARC enemies in an area, allowing you to briefly track their location.",
+    "workbench": "Utility Bench 3"
   },
   {
     "id": "tagging-grenade-recipe",
@@ -4383,7 +5257,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Tagging Grenade",
+    "workbench": ""
   },
   {
     "id": "tattered-arc-lining",
@@ -4393,7 +5269,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Obtained from ARC enemies or activities. Can be recycled into fabric.",
+    "workbench": ""
   },
   {
     "id": "tattered-clothes",
@@ -4403,7 +5281,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into fabric.",
+    "workbench": ""
   },
   {
     "id": "telemetry-transceiver",
@@ -4413,7 +5293,9 @@ export const ITEMS: Item[] = [
     "sellValue": 3000,
     "recycleValue": 1200,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials",
+    "workbench": ""
   },
   {
     "id": "tempest-i",
@@ -4423,7 +5305,9 @@ export const ITEMS: Item[] = [
     "sellValue": 13000,
     "recycleValue": 5200,
     "decision": "keep",
-    "reason": "Weapon worth 13,000cr"
+    "reason": "Weapon worth 13,000cr",
+    "description": "Fully automatic assault rifle with moderate fire rate and accuracy.",
+    "workbench": "Weapon Bench 3"
   },
   {
     "id": "tempest-i-recipe",
@@ -4433,7 +5317,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Tempest I",
+    "workbench": ""
   },
   {
     "id": "tempest-ii",
@@ -4443,7 +5329,9 @@ export const ITEMS: Item[] = [
     "sellValue": 17000,
     "recycleValue": 6800,
     "decision": "keep",
-    "reason": "Weapon worth 17,000cr"
+    "reason": "Weapon worth 17,000cr",
+    "description": "Fully automatic assault rifle with moderate fire rate and accuracy.",
+    "workbench": "Weapon Bench I"
   },
   {
     "id": "tempest-iii",
@@ -4453,7 +5341,9 @@ export const ITEMS: Item[] = [
     "sellValue": 22000,
     "recycleValue": 8800,
     "decision": "keep",
-    "reason": "Weapon worth 22,000cr"
+    "reason": "Weapon worth 22,000cr",
+    "description": "Fully automatic assault rifle with moderate fire rate and accuracy.",
+    "workbench": "Weapon bench I"
   },
   {
     "id": "tempest-iv",
@@ -4463,7 +5353,9 @@ export const ITEMS: Item[] = [
     "sellValue": 0,
     "recycleValue": 0,
     "decision": "keep",
-    "reason": "Weapon worth 0cr"
+    "reason": "Weapon worth 0cr",
+    "description": "Fully automatic assault rifle with moderate fire rate and accuracy.",
+    "workbench": "Weapon Bench I"
   },
   {
     "id": "thermostat",
@@ -4473,7 +5365,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "tick-pod",
@@ -4483,7 +5377,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "The explosive pod from a Tick. Can be recycled into ARC Alloy.",
+    "workbench": ""
   },
   {
     "id": "toaster",
@@ -4493,7 +5389,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "torch-ginger",
@@ -4503,7 +5401,9 @@ export const ITEMS: Item[] = [
     "sellValue": 300,
     "recycleValue": 120,
     "decision": "keep",
-    "reason": "A plant used to craft medical supplies."
+    "reason": "A plant used to craft medical supplies.",
+    "description": "A plant used to craft medical supplies.",
+    "workbench": ""
   },
   {
     "id": "torn-blanket",
@@ -4513,7 +5413,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "A tattered piece of cloth.",
+    "workbench": ""
   },
   {
     "id": "torn-book",
@@ -4523,7 +5425,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "sell",
-    "reason": "Trinket - vendor for 1,000cr"
+    "reason": "Trinket - vendor for 1,000cr",
+    "description": "What pages remain speak of chosen heroes, vampires, and lots of longing glances.",
+    "workbench": ""
   },
   {
     "id": "torrent-i-recipe",
@@ -4533,7 +5437,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Torrente",
+    "workbench": "Gunsmith II"
   },
   {
     "id": "torrente-i",
@@ -4543,7 +5449,9 @@ export const ITEMS: Item[] = [
     "sellValue": 7000,
     "recycleValue": 2800,
     "decision": "keep",
-    "reason": "Weapon worth 7,000cr"
+    "reason": "Weapon worth 7,000cr",
+    "description": "Has large ammo capacity, but is only accurate while crouched. ",
+    "workbench": "Weapon Bench 2"
   },
   {
     "id": "torrente-ii",
@@ -4553,7 +5461,9 @@ export const ITEMS: Item[] = [
     "sellValue": 10000,
     "recycleValue": 4000,
     "decision": "keep",
-    "reason": "Weapon worth 10,000cr"
+    "reason": "Weapon worth 10,000cr",
+    "description": "Has large ammo capacity, but is only accurate while crouched. ",
+    "workbench": "Weapon Bench I"
   },
   {
     "id": "torrente-iii",
@@ -4563,7 +5473,9 @@ export const ITEMS: Item[] = [
     "sellValue": 13000,
     "recycleValue": 5200,
     "decision": "keep",
-    "reason": "Weapon worth 13,000cr"
+    "reason": "Weapon worth 13,000cr",
+    "description": "Has large ammo capacity, but is only accurate while crouched. ",
+    "workbench": "Weapon Bench I"
   },
   {
     "id": "torrente-iv",
@@ -4573,7 +5485,9 @@ export const ITEMS: Item[] = [
     "sellValue": 15000,
     "recycleValue": 6000,
     "decision": "keep",
-    "reason": "Weapon worth 15,000cr"
+    "reason": "Weapon worth 15,000cr",
+    "description": "Has large ammo capacity, but is only accurate while crouched. ",
+    "workbench": "Weapon Bench I"
   },
   {
     "id": "trailblazer-grenade",
@@ -4583,7 +5497,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1600,
     "recycleValue": 640,
     "decision": "keep",
-    "reason": "Consumable - use in raids"
+    "reason": "Consumable - use in raids",
+    "description": "A grenade that emits a trail of flammable gas along its path, causing an explosive chain reaction when it ignites.",
+    "workbench": "Explosives Bench II"
   },
   {
     "id": "trailblazer-grenade-blueprint",
@@ -4593,7 +5509,9 @@ export const ITEMS: Item[] = [
     "sellValue": 0,
     "recycleValue": 0,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Trailblazer Grenade",
+    "workbench": ""
   },
   {
     "id": "trigger-nade",
@@ -4603,7 +5521,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "keep",
-    "reason": "Consumable - use in raids"
+    "reason": "Consumable - use in raids",
+    "description": "A remote-detonated grenade that can stick to surfaces and ARC, dealing explosive damage when triggered.",
+    "workbench": ""
   },
   {
     "id": "trigger-nade-recipe",
@@ -4613,7 +5533,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Trigger Nade",
+    "workbench": ""
   },
   {
     "id": "turbo-pump",
@@ -4623,7 +5545,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "unusable-weapon",
@@ -4633,7 +5557,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "vase",
@@ -4643,7 +5569,9 @@ export const ITEMS: Item[] = [
     "sellValue": 3000,
     "recycleValue": 1200,
     "decision": "sell",
-    "reason": "Trinket - vendor for 3,000cr"
+    "reason": "Trinket - vendor for 3,000cr",
+    "description": "A decorative vase, possibly valuable.",
+    "workbench": ""
   },
   {
     "id": "venator-recipe",
@@ -4653,7 +5581,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Venator. Fires two shots at a time.",
+    "workbench": "Gunsmith II"
   },
   {
     "id": "venator-i",
@@ -4663,7 +5593,9 @@ export const ITEMS: Item[] = [
     "sellValue": 7000,
     "recycleValue": 2800,
     "decision": "keep",
-    "reason": "Weapon worth 7,000cr"
+    "reason": "Weapon worth 7,000cr",
+    "description": "Semi-automatic pistol. Fires two shots at a time.",
+    "workbench": "Weapon Bench 2"
   },
   {
     "id": "venator-ii",
@@ -4673,7 +5605,9 @@ export const ITEMS: Item[] = [
     "sellValue": 0,
     "recycleValue": 0,
     "decision": "keep",
-    "reason": "Weapon worth 0cr"
+    "reason": "Weapon worth 0cr",
+    "description": "Semi-automatic pistol. Fires two shots at a time.",
+    "workbench": "Weapon Bench"
   },
   {
     "id": "venator-iii",
@@ -4683,7 +5617,9 @@ export const ITEMS: Item[] = [
     "sellValue": 0,
     "recycleValue": 0,
     "decision": "keep",
-    "reason": "Weapon worth 0cr"
+    "reason": "Weapon worth 0cr",
+    "description": "Semi-automatic pistol. Fires two shots at a time",
+    "workbench": "Weapon Bench"
   },
   {
     "id": "venator-iv",
@@ -4693,7 +5629,9 @@ export const ITEMS: Item[] = [
     "sellValue": 10540,
     "recycleValue": 4216,
     "decision": "keep",
-    "reason": "Weapon worth 10,540cr"
+    "reason": "Weapon worth 10,540cr",
+    "description": "Semi-automatic pistol. Fires two shots at a time",
+    "workbench": "Weapon Bench"
   },
   {
     "id": "vertical-grip-i",
@@ -4703,7 +5641,9 @@ export const ITEMS: Item[] = [
     "sellValue": 640,
     "recycleValue": 256,
     "decision": "keep",
-    "reason": "Weapon mod - improves your guns"
+    "reason": "Weapon mod - improves your guns",
+    "description": "Slightly reduces vertical recoil.",
+    "workbench": "Gunsmith 1"
   },
   {
     "id": "vertical-grip-ii",
@@ -4713,7 +5653,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "keep",
-    "reason": "Weapon mod - improves your guns"
+    "reason": "Weapon mod - improves your guns",
+    "description": "Moderately reduces vertical recoil.",
+    "workbench": ""
   },
   {
     "id": "vertical-grip-ii-recipe",
@@ -4723,7 +5665,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Vertical Grip II",
+    "workbench": ""
   },
   {
     "id": "vertical-grip-iii",
@@ -4733,7 +5677,9 @@ export const ITEMS: Item[] = [
     "sellValue": 0,
     "recycleValue": 0,
     "decision": "keep",
-    "reason": "Weapon mod - improves your guns"
+    "reason": "Weapon mod - improves your guns",
+    "description": "Significantly reduces vertical recoil.",
+    "workbench": ""
   },
   {
     "id": "vertical-grip-iii-recipe",
@@ -4743,7 +5689,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Vertical Grip III",
+    "workbench": ""
   },
   {
     "id": "very-comfortable-pillow",
@@ -4753,7 +5701,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "sell",
-    "reason": "Trinket - vendor for 2,000cr"
+    "reason": "Trinket - vendor for 2,000cr",
+    "description": "The envy of every Raider. Like sleeping on an especially ergonomic cloud.",
+    "workbench": ""
   },
   {
     "id": "vita-shot",
@@ -4763,7 +5713,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2000,
     "recycleValue": 800,
     "decision": "keep",
-    "reason": "Consumable - use in raids"
+    "reason": "Consumable - use in raids",
+    "description": "A medical item that restores a large amount of health.",
+    "workbench": "Med Station 3"
   },
   {
     "id": "vita-shot-recipe",
@@ -4773,7 +5725,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Vita Shot - A medical item that restores a large amount of health.",
+    "workbench": "Med Station"
   },
   {
     "id": "vita-spray",
@@ -4783,7 +5737,9 @@ export const ITEMS: Item[] = [
     "sellValue": 2880,
     "recycleValue": 1152,
     "decision": "keep",
-    "reason": "Consumable - use in raids"
+    "reason": "Consumable - use in raids",
+    "description": "A medical item that continuously restores health during use. Can be used on yourself or your allies.",
+    "workbench": "Med Station"
   },
   {
     "id": "vita-spray-recipe",
@@ -4793,7 +5749,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Vita Spray",
+    "workbench": ""
   },
   {
     "id": "voltage-converter",
@@ -4803,7 +5761,9 @@ export const ITEMS: Item[] = [
     "sellValue": 500,
     "recycleValue": 200,
     "decision": "keep",
-    "reason": "ARC material - needed for upgrades"
+    "reason": "ARC material - needed for upgrades",
+    "description": "A device that adjusts electrical voltage for various crafting purposes.",
+    "workbench": ""
   },
   {
     "id": "vulcano-blueprint",
@@ -4813,7 +5773,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Allows you to craft the Vulcano.",
+    "workbench": ""
   },
   {
     "id": "vulcano-i",
@@ -4823,7 +5785,9 @@ export const ITEMS: Item[] = [
     "sellValue": 10000,
     "recycleValue": 4000,
     "decision": "keep",
-    "reason": "Weapon worth 10,000cr"
+    "reason": "Weapon worth 10,000cr",
+    "description": "Semi-automatic shotgun with good bullet spread but sharp falloff.",
+    "workbench": "Weapon Bench 3"
   },
   {
     "id": "vulcano-ii",
@@ -4833,7 +5797,9 @@ export const ITEMS: Item[] = [
     "sellValue": 13000,
     "recycleValue": 5200,
     "decision": "keep",
-    "reason": "Weapon worth 13,000cr"
+    "reason": "Weapon worth 13,000cr",
+    "description": "Semi-automatic shotgun with good bullet spread but sharp falloff.",
+    "workbench": "Gunsmith III"
   },
   {
     "id": "vulcano-iii",
@@ -4843,7 +5809,9 @@ export const ITEMS: Item[] = [
     "sellValue": 17000,
     "recycleValue": 6800,
     "decision": "keep",
-    "reason": "Weapon worth 17,000cr"
+    "reason": "Weapon worth 17,000cr",
+    "description": "Semi-automatic shotgun with good bullet spread but sharp falloff",
+    "workbench": "Weapon Bench"
   },
   {
     "id": "vulcano-iv",
@@ -4853,7 +5821,9 @@ export const ITEMS: Item[] = [
     "sellValue": 22000,
     "recycleValue": 8800,
     "decision": "keep",
-    "reason": "Weapon worth 22,000cr"
+    "reason": "Weapon worth 22,000cr",
+    "description": "Semi-automatic shotgun with good bullet spread but sharp falloff",
+    "workbench": "Gunsmith III"
   },
   {
     "id": "wasp-driver",
@@ -4863,7 +5833,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "A control module used to operate Wasp drones or vehicles. Can be recycled into ARC Alloy.",
+    "workbench": ""
   },
   {
     "id": "water-filter",
@@ -4873,7 +5845,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "water-pump",
@@ -4883,7 +5857,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "recycle",
-    "reason": "Recyclable - breaks down into materials"
+    "reason": "Recyclable - breaks down into materials",
+    "description": "Can be recycled into crafting materials.",
+    "workbench": ""
   },
   {
     "id": "wires-recipe",
@@ -4893,7 +5869,9 @@ export const ITEMS: Item[] = [
     "sellValue": 200,
     "recycleValue": 80,
     "decision": "keep",
-    "reason": "ARC material - needed for upgrades"
+    "reason": "ARC material - needed for upgrades",
+    "description": "A bundle of old wires. Used to craft a wide range of items. Can be recycled into scrap metal.",
+    "workbench": ""
   },
   {
     "id": "wolfpack",
@@ -4903,7 +5881,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "sell",
-    "reason": "High value consumable - 5,000cr"
+    "reason": "High value consumable - 5,000cr",
+    "description": "A grenade that scatters into multiple homing missiles, each one targeting ARC and dealing explosive damage on impact.",
+    "workbench": "Explosives Bench III"
   },
   {
     "id": "wolfpack-recipe",
@@ -4913,7 +5893,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Wolfpack",
+    "workbench": ""
   },
   {
     "id": "yellow-light-stick",
@@ -4923,7 +5905,9 @@ export const ITEMS: Item[] = [
     "sellValue": 150,
     "recycleValue": 60,
     "decision": "keep",
-    "reason": "Consumable - use in raids"
+    "reason": "Consumable - use in raids",
+    "description": "A throwable chemical light that illuminates the area around it.",
+    "workbench": ""
   },
   {
     "id": "yellow-light-stick-blueprint",
@@ -4933,7 +5917,9 @@ export const ITEMS: Item[] = [
     "sellValue": 5000,
     "recycleValue": 2000,
     "decision": "keep",
-    "reason": "Blueprint - unlocks crafting recipes"
+    "reason": "Blueprint - unlocks crafting recipes",
+    "description": "Lets you craft a Yellow Light Stick",
+    "workbench": ""
   },
   {
     "id": "zipline",
@@ -4943,7 +5929,9 @@ export const ITEMS: Item[] = [
     "sellValue": 1000,
     "recycleValue": 400,
     "decision": "keep",
-    "reason": "Consumable - use in raids"
+    "reason": "Consumable - use in raids",
+    "description": "A deployable zipline that allows you to quickly move between two locations.",
+    "workbench": "Utility Station II"
   }
 ];
 
