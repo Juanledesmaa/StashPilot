@@ -1,9 +1,10 @@
-import { useState, useRef, useCallback } from 'react';
-import Tesseract from 'tesseract.js';
-import { searchItems, findItemByName, type Item } from './data/items';
+import { useState, useRef, useCallback, useEffect } from 'react';
+import { searchItems, findItemByName, findItem, type Item } from './data/items';
+import { useIconMatcher } from './vision/useIconMatcher';
 import './App.css';
 
 type InputMode = 'list' | 'screenshot';
+type ScanMode = 'icon' | 'ocr';
 
 interface LootItem {
   item: Item;
@@ -31,8 +32,26 @@ export function App() {
   const [progress, setProgress] = useState(0);
   const [detected, setDetected] = useState<DetectedItem[]>([]);
 
+  // Icon matching state
+  const [cheatSheet, setCheatSheet] = useState<string | null>(null);
+  const [scanMode, setScanMode] = useState<ScanMode>('icon');
+  const iconMatcher = useIconMatcher();
+
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const cheatSheetInputRef = useRef<HTMLInputElement>(null);
   const results = searchItems(search);
+
+  // Load cheat sheet when uploaded
+  const handleCheatSheetUpload = useCallback((file: File) => {
+    if (!file.type.startsWith('image/')) return;
+    const reader = new FileReader();
+    reader.onload = async (e) => {
+      const url = e.target?.result as string;
+      setCheatSheet(url);
+      await iconMatcher.loadCheatSheet(url);
+    };
+    reader.readAsDataURL(file);
+  }, [iconMatcher]);
 
   // Add single item (list mode)
   const addItem = (item: Item) => {
@@ -104,50 +123,36 @@ export function App() {
     setProgress(0);
 
     try {
-      const result = await Tesseract.recognize(image, 'eng', {
-        logger: (m) => {
-          if (m.status === 'recognizing text') {
-            setProgress(Math.round(m.progress * 100));
-          }
-        },
-      });
+      if (scanMode === 'icon' && iconMatcher.isReady) {
+        // Icon matching mode
+        setProgress(10);
+        console.log('Starting icon scan...');
 
-      // Parse OCR text and match to items
-      const lines = result.data.text
-        .split('\n')
-        .map(l => l.trim())
-        .filter(l => l.length > 2);
+        const matches = await iconMatcher.quickScan(image);
+        setProgress(80);
 
-      const detectedItems: DetectedItem[] = [];
+        const detectedItems: DetectedItem[] = matches.map(match => {
+          // Try to find the full item data from our database
+          const fullItem = findItem(match.item.name) || findItemByName(match.item.name);
 
-      for (const line of lines) {
-        // Try to extract quantity (e.g., "x5", "5x", or just number at end)
-        const qtyMatch = line.match(/[x×]?\s*(\d+)\s*[x×]?/i);
-        const qty = qtyMatch ? parseInt(qtyMatch[1]) : 1;
-
-        // Clean the line for item matching
-        const cleanText = line
-          .replace(/[x×]?\s*\d+\s*[x×]?/gi, '')
-          .replace(/[^a-zA-Z\s'-]/g, '')
-          .trim();
-
-        if (cleanText.length < 2) continue;
-
-        // Try to match to an item
-        const item = findItemByName(cleanText);
-
-        detectedItems.push({
-          text: line,
-          item,
-          qty: Math.min(qty, 99),
-          selected: item !== null,
+          return {
+            text: `${match.item.name} (${Math.round(match.confidence)}% match)`,
+            item: fullItem || null,
+            qty: 1,
+            selected: fullItem !== null,
+          };
         });
-      }
 
-      setDetected(detectedItems);
+        setProgress(100);
+        setDetected(detectedItems);
+        console.log(`Found ${detectedItems.length} items via icon matching`);
+      } else {
+        // Fallback: no icon matching available
+        alert('Please upload the cheat sheet image first to enable icon scanning.');
+      }
     } catch (error) {
-      console.error('OCR failed:', error);
-      alert('Failed to process screenshot. Try a clearer image.');
+      console.error('Scan failed:', error);
+      alert('Failed to process screenshot. Make sure the cheat sheet is loaded.');
     } finally {
       setProcessing(false);
       setProgress(0);
@@ -230,12 +235,39 @@ export function App() {
       {/* Screenshot Mode */}
       {mode === 'screenshot' && (
         <section className="screenshot-section">
+          {/* Cheat Sheet Setup */}
+          <div className={`cheatsheet-setup ${iconMatcher.isReady ? 'ready' : ''}`}>
+            <input
+              ref={cheatSheetInputRef}
+              type="file"
+              accept="image/*"
+              onChange={(e) => e.target.files?.[0] && handleCheatSheetUpload(e.target.files[0])}
+              hidden
+            />
+            {!iconMatcher.isReady ? (
+              <button
+                className="cheatsheet-btn"
+                onClick={() => cheatSheetInputRef.current?.click()}
+                disabled={iconMatcher.isLoading}
+              >
+                {iconMatcher.isLoading ? '⏳ Loading...' : '📋 Load Cheat Sheet First'}
+              </button>
+            ) : (
+              <div className="cheatsheet-ready">
+                ✓ Cheat sheet loaded - Ready to scan icons
+              </div>
+            )}
+            {iconMatcher.error && (
+              <div className="cheatsheet-error">{iconMatcher.error}</div>
+            )}
+          </div>
+
           {!image ? (
             <div
-              className="drop-zone"
+              className={`drop-zone ${!iconMatcher.isReady ? 'disabled' : ''}`}
               onDrop={handleDrop}
               onDragOver={(e) => e.preventDefault()}
-              onClick={() => fileInputRef.current?.click()}
+              onClick={() => iconMatcher.isReady && fileInputRef.current?.click()}
             >
               <input
                 ref={fileInputRef}
@@ -245,8 +277,12 @@ export function App() {
                 hidden
               />
               <div className="drop-icon">📸</div>
-              <p>Drop screenshot or tap to upload</p>
-              <span className="drop-hint">Take a screenshot of your inventory</span>
+              <p>{iconMatcher.isReady ? 'Drop screenshot or tap to upload' : 'Load cheat sheet first'}</p>
+              <span className="drop-hint">
+                {iconMatcher.isReady
+                  ? 'Take a screenshot of your inventory'
+                  : 'Upload the Arc Raiders cheat sheet image to enable icon recognition'}
+              </span>
             </div>
           ) : (
             <div className="preview">

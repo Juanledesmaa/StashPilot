@@ -81,6 +81,66 @@ body {
   margin-bottom: 20px;
 }
 
+/* Cheat Sheet Setup */
+.cheatsheet-setup {
+  margin-bottom: 16px;
+  padding: 12px;
+  background: var(--card);
+  border-radius: 12px;
+  border: 2px dashed var(--border);
+}
+
+.cheatsheet-setup.ready {
+  border-style: solid;
+  border-color: var(--keep);
+}
+
+.cheatsheet-btn {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  background: var(--border);
+  border: none;
+  border-radius: 8px;
+  color: var(--text);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.cheatsheet-btn:hover:not(:disabled) {
+  background: var(--muted);
+}
+
+.cheatsheet-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.cheatsheet-ready {
+  text-align: center;
+  color: var(--keep);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.cheatsheet-error {
+  text-align: center;
+  color: #ef4444;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.drop-zone.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.drop-zone.disabled:hover {
+  border-color: var(--border);
+  background: transparent;
+}
+
 .drop-zone {
   border: 2px dashed var(--border);
   border-radius: 16px;
